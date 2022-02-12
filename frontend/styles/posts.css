@@ -1,0 +1,19 @@
+.layout-post time {
+  display: block;
+  margin-bottom: 20px;
+  font-size: 1.0rem;
+}
+
+.post-item:not(:last-child) {
+  margin-bottom: 40px;
+}
+
+.post-item time {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 1.0rem;
+}
+
+.layout-post time {
+  text-align: center;
+}

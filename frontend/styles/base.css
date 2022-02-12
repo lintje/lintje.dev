@@ -1,0 +1,171 @@
+:root {
+  --body-color: #2A2A2A;
+  --body-background: #F7F7F7;
+
+  --highlight-color: #5000CA;
+  --secondary-color: #CD4631;
+  --secondary-color-light: #F3EBFF;
+
+  --max-content-width: 1200px;
+  --max-small-content-width: 960px;
+
+  --header-height: 145px;
+  --footer-content-height: 75px;
+  --footer-shape-height: 100px;
+  --footer-total-height: calc(var(--footer-content-height) + var(--footer-shape-height) + var(--spacing-small));
+  --docs-nav-width: 220px;
+  --spacing-normal: 40px;
+  --spacing-small: 20px;
+  --spacing-tiny: 10px;
+
+  --border-radius: 15px;
+}
+
+@custom-media --mobile-breakpoint (max-width: 750px);
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  position: relative;
+  color: var(--body-color);
+  font-size: 120%;
+  font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    "Helvetica", "Arial", sans-serif;
+  line-height: 1.5;
+  background-color: var(--body-background);
+}
+
+.no-scroll {
+  overflow: hidden;
+  position: fixed;
+}
+
+.no-scroll body {
+  overflow: hidden;
+  position: fixed;
+  max-width: 100%;
+}
+
+main {
+  position: relative;
+  margin: 0 auto;
+
+  min-height: calc(100vh - var(--header-height) - var(--footer-total-height));
+}
+
+a {
+  color: var(--highlight-color);
+  text-decoration: underline;
+  text-decoration-skip-ink: all;
+  text-decoration-color: var(--secondary-color);
+  transition: all 150ms ease-in-out;
+}
+
+a:hover {
+  text-decoration-thickness: 2px;
+  text-decoration-color: var(--highlight-color);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: var(--highlight-color);
+  font-weight: bold;
+  line-height: 1.2;
+  word-break: break-word;
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 3.5rem;
+}
+
+@media (--mobile-breakpoint) {
+  h1 {
+    margin-bottom: 10px;
+    font-size: 3rem;
+  }
+}
+
+h2 {
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+}
+
+h3 {
+  margin-bottom: 10px;
+  font-size: 1.8rem;
+}
+
+h4 {
+  margin-bottom: 10px;
+  font-size: 1.4rem;
+}
+
+ul {
+  margin-bottom: 20px;
+  padding-left: 20px;
+  list-style: disc;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+ul ul {
+  margin-bottom: 0;
+}
+
+ul ul li {
+  margin-bottom: 0;
+}
+
+hr {
+  border: none;
+  border-top: 2px dotted #bbb;
+  margin: 3rem 0;
+}
+
+strong {
+  font-weight: bold;
+}
+
+em {
+  font-style: italic;
+}
+
+blockquote {
+  padding: 20px;
+}
+
+p:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: var(--max-content-width);
+}
+
+.go-to-content-link {
+  position: absolute;
+  margin: 0;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+}

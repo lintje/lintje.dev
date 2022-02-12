@@ -1,0 +1,13 @@
+---
+layout: default
+---
+
+<main id="main">
+  <article>
+    <h1><%= resource.data.full_title || resource.data.title %></h1>
+    <time datetime="<%= format_date resource.data.date %>"><%= display_date resource.data.date %></time>
+
+    <%= yield %>
+  </article>
+</main>
+

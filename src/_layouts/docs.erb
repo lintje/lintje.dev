@@ -1,0 +1,42 @@
+---
+layout: default
+layout_class: "foo"
+---
+
+<div class="container docs-page">
+  <div class="docs-navigation">
+    <nav>
+      <h2>Getting started</h2>
+      <ul>
+        <li><%= link_to_active "Home", "/docs" %></li>
+        <li><%= link_to_active "Usage", "/docs/usage.html" %></li>
+        <li><%= link_to_active "Configuration", "/docs/configuration.html" %></li>
+        <li><%= link_to_active "Philosophy", "/docs/philosophy.html" %></li>
+        <li><%= link_to_active "Support", "/docs/support.html" %></li>
+      </ul>
+
+      <h2>Setup</h2>
+      <ul>
+        <li><%= link_to_active "Installation", "/docs/installation" %></li>
+        <li><%= link_to_active "Git hooks", "/docs/git-hooks.html" %></li>
+        <li><%= link_to_active "Git alias", "/docs/git-alias.html" %></li>
+        <li><%= link_to_active "Automated Review", "/docs/automated-review.html" %></li>
+      </ul>
+
+      <h2>Rules</h2>
+      <ul>
+        <li><%= link_to_active "Rules overview", "/docs/rules" %></li>
+        <li><%= link_to_active "Commit subject", "/docs/rules/commit-subject.html" %></li>
+        <li><%= link_to_active "Commit message", "/docs/rules/commit-message.html" %></li>
+        <li><%= link_to_active "Commit type", "/docs/rules/commit-type.html" %></li>
+        <li><%= link_to_active "Branch", "/docs/rules/branch.html" %></li>
+      </ul>
+    </nav>
+  </div>
+
+  <main class="content" id="main">
+    <h1><%= resource.data.title %></h1>
+
+    <%= yield %>
+  </main>
+</div>

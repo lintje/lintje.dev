@@ -1,0 +1,18 @@
+---
+layout: page
+title: News
+---
+
+<div class="posts">
+  <% collections.posts.resources.each do |post| %>
+    <div class="post-item">
+      <h2>
+        <a href="<%= post.relative_url %>"><%= post.data.title %></a>
+      </h2>
+      <time datetime="<%= format_date post.data.date %>"><%= display_date post.data.date %></time>
+      <div class="post-summary">
+        <%= markdownify post.data.description %>
+      </div>
+    </div>
+  <% end %>
+</div>

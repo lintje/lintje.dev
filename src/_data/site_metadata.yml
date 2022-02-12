@@ -1,0 +1,13 @@
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.metadata.title }}, {{ site.metadata.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.metadata.myvariable }}.
+
+title: Lintje
+email: contact@lintje.dev
+github_repo: https://github.com/tombruijn/lintje
+releases: https://github.com/tombruijn/lintje/releases
+issue_tracker: https://github.com/tombruijn/lintje/issues
+discussions: https://github.com/tombruijn/lintje/discussions
+latest_version: 0.6.1

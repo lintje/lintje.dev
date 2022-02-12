@@ -1,0 +1,23 @@
+<header class="header">
+  <div class="container">
+    <div class="logo"><a href="/">Lintje</a></div>
+
+    <div class="navigation">
+      <input type="checkbox" id="menu-open" class="js-menu-state" />
+      <label class="menu-toggle js-menu-toggle" for="menu-open">
+        <div class="menu-icon">
+          <div class="menu-icon-inner"></div>
+        </div>
+      </label>
+
+      <nav>
+        <ul>
+          <li><%= link_to_active "Home", "/" %></li>
+          <li><%= link_to_active "Documentation", "/docs", %r{^/docs} %></li>
+          <li><%= link_to_active "News", "/posts", %r{^/posts} %></li>
+          <li><%= link_to_active "About", "/about.html" %></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>

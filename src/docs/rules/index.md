@@ -1,0 +1,34 @@
+---
+layout: docs
+title: "Lintje rules"
+---
+
+All the rules Lintje follows are documented in this rules section. The heading name matches the rule name, and can be used to [ignore specific rules per commit](/docs/configuration.html#ignoring-rules-per-commit).
+
+_Lintje is primarily focussed on supporting the English language, other languages may not be compatible with every rule currently. Please [create an issue][issues] if you run into any problems._
+
+<%= toc %>
+
+## Available rule types
+
+Read the rules pages for all the rules Lintje checks and how to fix them.
+
+- [Commit subject](/docs/rules/commit-subject.html)
+- [Commit message](/docs/rules/commit-message.html)
+- [Commit type](/docs/rules/commit-type.html)
+- [Branch](/docs/rules/branch.html)
+
+<a name="unicode"></a>
+## A note about Unicode display width
+
+Not all characters render with the same display width in columns in the terminal. The `a` character has a width of one column, but an emoji usually is wider than one column. Lintje's rules will count line length in characters using their display width. This means a subject can contain 50 characters like the `a` character, but it cannot contain 50 emoji that are two columns wide. Such an emoji heavy subject is allowed a maximum of 25 emoji for the [SubjectLength rule](/docs/rules/commit-subject.html#subjectlength).
+
+Not all emoji render with the same width and may break the layout of Lintje's output, and cause problems with rules that calculate line length. Lintje will attempt to correct the automatic width calculation of character width, but some characters may not be calculated correctly. This is a bug. Please [report any characters with that break the output][issues].
+
+For example, by default the "Green Check Mark" emoji `✅` has a width of two, while the "Woman Scientist" emoji `👩‍🔬` has a width of four columns. This is because the second emoji is a combination of the `👩` and `🔬` emoji. Normally they would both be counted towards the width even though only one emoji is rendered. This particular scenario is calculated and rendered properly as two columns in Lintje.
+
+The heart emoji `❤️`, and similar emoji, will only have a width of one column, this is by design as most other (terminal) apps–in which Lintje will print its output–will also render it with a width of one column.
+
+[unicode]: #unicode
+[imperative mood]: https://en.wikipedia.org/wiki/Imperative_mood
+[issues]: <%= site.metadata.issue_tracker %>

@@ -1,0 +1,98 @@
+---
+layout: home
+page_class: "home"
+full_title: "Lintje: A Git linter for people"
+description: "A Git linter for people focussed on communication in teams and future readers."
+---
+
+<section class="home-section">
+  <div class="container">
+    <h1>A Git linter for people</h1>
+
+    <p>Improve your team's communication in Git.</p>
+
+    <p>Lintje is an opinionated linter for Git, focussed on promoting communication between people. The idea is to write commits meant for other people reading them during reviews and debug sessions 2+ months from now.</p>
+
+    <div class="text-center">
+      <a class="button" href="/posts/lintje-<%= site.metadata.latest_version.tr(".", "-") %>.html">
+        Latest release: Lintje <%= site.metadata.latest_version %>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="home-section dark-section">
+  <div class="container">
+    <h2>Write a book</h2>
+
+    <p>Add context to your Git commits and branches. Write commits that explain the problem the commit solves, what the chosen solution is and what alternatives were considered.</p>
+
+    <p>Lintje helps by checking a variety of rules, from style to content. Some of these rules are:</p>
+
+    <ul>
+      <li>The subject should describe the change. No "fix tests" commits allowed.</li>
+      <li>The subject does not start with a prefix: fix, feat, doc, refactor, etc.</li>
+      <li>The subject has a maximum of 50 characters.</li>
+      <li>The message body contains a reference to the issue it's a part of.</li>
+      <li>Message body lines are a maximum of 70 characters, excluding URLs and code examples.</li>
+      <li>A commit should contain file changes.</li>
+      <li>Fixup and squash commits need to be rebased before merging.</li>
+      <li>Avoid merge commits to merge a remote branch into a local feature branch, rebase the branch instead.</li>
+      <li>Branch names describe the topic of the changes.</li>
+      <li>Branch names don't only include a ticket number.</li>
+    </ul>
+
+    <div class="text-center">
+      <a href="/docs/rules">Read more about Lintje's rules</a>
+    </div>
+  </div>
+</section>
+
+<section class="home-section">
+  <div class="container">
+    <h2>Detailed messages</h2>
+
+    <p>Lintje doesn't just list a bunch of problems, it explains what's wrong and helps resolve issues quicker.</p>
+
+    <pre><code>$ lintje
+SubjectCliche: The subject does not explain the change in much detail
+  9a2ae29:1:1: Fix bug
+    |
+  1 | Fix bug
+    | ^^^^^^^ Describe the change in more detail
+
+MessagePresence: No message body was found
+  9a2ae29:3:1: Fix bug
+    |
+  1 | Fix bug
+  2 |
+  3 |
+    | ^ Add a message body with context about the change and why it was made
+
+BranchNameTicketNumber: A ticket number was detected in the branch name
+  Branch:1: fix-123
+  |
+  | fix-123
+  | ^^^^^^^ Remove the ticket number from the branch name or expand the branch name with more details
+
+1 commit and branch inspected, 3 issues detected</code></pre>
+  </div>
+</section>
+
+<section class="home-section">
+  <div class="container">
+    <h2>Get started</h2>
+
+    <div class="columns">
+      <div class="box text-center">
+        <div><a href="/docs/">Read the guides</a></div>
+        <p>Learn more about how Lintje works and how to install it into your project.</p>
+      </div>
+
+      <div class="box text-center">
+        <div><a href="https://tomdebruijn.com/posts/git-is-about-communication/">Git is about communication</a></div>
+        <p>Read more about the philosophy of Lintje by reading the post that inspired it.</p>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,40 @@
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="author" content="Tom de Bruijn" />
+<title><%= page_title =%></title>
+<link rel="canonical" href="<%= canonical_url %>">
+
+<% if resource.data.description %>
+  <meta name="description" content="<%= resource.data.description %>" />
+<% end %>
+<meta name="theme-color" content="#5000ca" />
+
+<meta property="og:site_name" content="<%= site_title %>">
+<meta property="og:title" content="<%= page_title %>">
+<meta name="og:description" content="<%= page_meta_description %>">
+<% if article? %>
+  <meta property="og:type" content="article">
+  <meta property="og:article:published_time" content="<%= resource.data.date.iso8601 %>T12:00:00Z">
+<% else %>
+  <meta property="og:type" content="website">
+<% end %>
+<meta property="og:url" content="<%= canonical_url %>">
+<meta property="og:image" content="<%= default_social_image_url %>">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="628">
+
+<meta name="twitter:site" content="@tombruijn">
+<meta name="twitter:card" content="<%= twitter_card_type %>">
+<meta name="twitter:title" content="<%= page_title %>">
+<meta name="twitter:description" content="<%= page_meta_description %>">
+<meta name="twitter:image" content="<%= default_social_image_url %>">
+<meta name="twitter:url" content="<%= canonical_url %>">
+
+<link rel="stylesheet" href="<%= webpack_path :css %>" />
+<script src="<%= webpack_path :js %>" defer></script>
+<%= live_reload_dev_js %>
+
+<% if Bridgetown.env.production? %>
+  <script async defer data-domain="lintje.dev" src="https://plausible.io/js/plausible.js"></script>
+  <script>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
+<% end %>
