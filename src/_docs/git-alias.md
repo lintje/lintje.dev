@@ -1,5 +1,4 @@
 ---
-layout: docs
 title: "Git alias"
 description: "Learn how to set up a Git alias to use in your workflow."
 ---

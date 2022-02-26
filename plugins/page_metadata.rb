@@ -1,6 +1,6 @@
 module PageMetadata
   def canonical_url
-    view.resource.destination.absolute_url.sub(".html.html", ".html").sub(/\.html\/$/, ".html")
+    view.resource.destination.absolute_url.sub(/\/$/, "")
   end
 
   def page_meta_description

@@ -1,5 +1,4 @@
 ---
-layout: docs
 title: "Philosophy"
 description: "Read more about Lintje's philosophy and why the rules are the way they are."
 ---

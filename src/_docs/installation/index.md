@@ -1,5 +1,4 @@
 ---
-layout: docs
 title: "Installation"
 ---
 
@@ -7,13 +6,13 @@ To use Lintje, it first needs to be installed on the systems you want to validat
 
 Lintje has a release per Operating System, make sure you Operating System of choice is supported: see the [list of installation targets](#supported-operating-systems).
 
-After you've installed Lintje, make sure to add [Git hooks](/docs/git-hooks.html) to your local project and/or add Lintje to the [Continuous Integration for your project](/docs/automated-review.html).
+After you've installed Lintje, make sure to add [Git hooks](/docs/git-hooks) to your local project and/or add Lintje to the [Continuous Integration for your project](/docs/automated-review).
 
 <%= toc %>
 
 ## macOS
 
-To install Lintje on macOS use the [Homebrew](https://brew.sh/) tap.
+To install Lintje on macOS use the [Homebrew](https://brew.sh) tap.
 
 ```
 brew tap tombruijn/lintje
@@ -29,7 +28,7 @@ brew upgrade lintje
 
 ## Linux
 
-Please see the [Linux installation guide](/docs/installation/linux.html) for more information about different Linux distributions.
+Please see the [Linux installation guide](/docs/installation/linux) for more information about different Linux distributions.
 
 ## Microsoft Windows
 
@@ -37,7 +36,7 @@ There is no automated method of installing Lintje on Microsoft Windows at this t
 
 ## Cargo install
 
-If [Rust](https://www.rust-lang.org/) is installed on your system it's also an option to install the Lintje crate using the command below. It's not guaranteed to work on any system Rust runs on, but please [create an issue][issues] if you run into any problems.
+If [Rust](https://www.rust-lang.org) is installed on your system it's also an option to install the Lintje crate using the command below. It's not guaranteed to work on any system Rust runs on, but please [create an issue][issues] if you run into any problems.
 
 ```
 cargo install lintje

@@ -1,5 +1,4 @@
 ---
-layout: docs
 title: "Commit message rules"
 description: "Read about Lintje's rules for Git commit messages. Descriptive commit messages are important during reviews and whenever someone looks back and has found a commit to contain a relevant change."
 ---
@@ -88,4 +87,4 @@ tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
 - Certain characters like emoji are counted as multiple characters in this rule. Read more about [Unicode support][unicode].
 
 [unicode]: /docs/rules/#unicode
-[NeedsRebase]: /docs/rules/commit-type.html#needsrebase
+[NeedsRebase]: /docs/rules/commit-type/#needsrebase

@@ -1,5 +1,4 @@
 ---
-layout: docs
 title: "Automated review"
 description: "Set up Lintje in your Continuous Integration system to check Lintje's rules for every commit pushed to a repository."
 ---

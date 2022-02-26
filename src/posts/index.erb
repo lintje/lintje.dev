@@ -7,7 +7,7 @@ title: News
   <% collections.posts.resources.each do |post| %>
     <div class="post-item">
       <h2>
-        <a href="<%= post.relative_url %>"><%= post.data.title %></a>
+        <a href="<%= post.relative_url.sub(/\/$/, "") %>"><%= post.data.title %></a>
       </h2>
       <time datetime="<%= format_date post.data.date %>"><%= display_date post.data.date %></time>
       <div class="post-summary">

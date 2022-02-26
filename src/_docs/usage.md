@@ -1,12 +1,11 @@
 ---
-layout: docs
 title: "Usage"
 description: "Learn more about how you can use Lintje and what options are available."
 ---
 
 Lintje is a command line tool. After [installation] Lintje can be called with the `lintje` command.
 
-It's recommended to add Lintje to the project Continuous Integration setup to lint the range of commits added by a Pull Request or push. See also the [automated review](/docs/automated-review.html) for more usage examples.
+It's recommended to add Lintje to the project Continuous Integration setup to lint the range of commits added by a Pull Request or push. See also the [automated review] for more usage examples.
 
 <%= toc %>
 
@@ -42,7 +41,7 @@ lintje main..develop
 
 <%= version_label "0.4.0" %>
 
-By default Lintje will validate the branch according to the [branch rules](/docs/rules/branch.html). This validation type can be disabled by calling lintje with the `--no-branch` flag.
+By default Lintje will validate the branch according to the [branch rules](/docs/rules/branch). This validation type can be disabled by calling lintje with the `--no-branch` flag.
 
 ```sh
 # Run Lintje without branch validation
@@ -53,7 +52,7 @@ lintje --no-branch
 
 <%= version_label "0.1.0" %>
 
-To accommodate for the "commit-msg" Git hook, the `--hook-message-file` option allow you to configure where Lintje should read the commit message from. This is primarily used for the [Git hook setup](/docs/git-hooks.html).
+To accommodate for the "commit-msg" Git hook, the `--hook-message-file` option allow you to configure where Lintje should read the commit message from. This is primarily used for the [Git hook setup](/docs/git-hooks).
 
 ```sh
 # Validate a specific commit message file
@@ -86,4 +85,4 @@ Lintje will exit with the following status codes in these situations:
 
 [issues]: <%= site.metadata.issue_tracker %>
 [installation]: /docs/installation
-[automated review]: /docs/automated-review.html
+[automated review]: /docs/automated-review/

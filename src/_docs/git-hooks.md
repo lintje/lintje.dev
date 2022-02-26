@@ -1,5 +1,4 @@
 ---
-layout: docs
 title: "Git hooks"
 description: "Learn how to set up Git hooks to validate commits while making them."
 ---

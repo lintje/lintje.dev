@@ -5,7 +5,12 @@ module ActiveLink
   end
 
   def current_path
-    view.resource.relative_url.sub(/(.+)\/$/, "\\1")
+    path = view.resource.destination.relative_url
+    if path.length > 1
+      path.sub(/\/$/, "")
+    else
+      path
+    end
   end
 
   def current_path?(selector)

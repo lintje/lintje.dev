@@ -1,5 +1,4 @@
 ---
-layout: docs
 title: "Support"
 description: "Need help with Lintje? This is the place to ask for help."
 ---

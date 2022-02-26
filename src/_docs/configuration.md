@@ -1,5 +1,4 @@
 ---
-layout: docs
 title: "Configuration"
 description: "Learn more about how to configure Lintje for each commit Lintje validates."
 ---

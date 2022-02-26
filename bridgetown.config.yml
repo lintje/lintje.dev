@@ -20,8 +20,13 @@ permalink: pretty_ext
 template_engine: erb
 
 collections:
+  docs:
+    output: true
+    permalink: "/:collection/:path/"
+    sort_by: order
+    name: Documentation
   posts:
-    permalink: "/posts/:slug.html"
+    permalink: "/posts/:slug/"
 
 # Other options you might want to investigate:
 #
