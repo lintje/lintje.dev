@@ -16,3 +16,8 @@
   background-color: var(--secondary-color-light);
   border-radius: var(--border-radius);
 }
+
+.markdown-toc a {
+  display: block;
+  padding: 2px 5px;
+}
