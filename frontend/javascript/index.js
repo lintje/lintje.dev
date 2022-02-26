@@ -2,6 +2,7 @@ import "index.css";
 
 // Import all JavaScript & CSS files from src/_components
 import components from "bridgetownComponents/**/*.{js,jsx,js.rb,css}";
+import "bridgetown-quick-search/dist"
 
 function addEventHandlers() {
   var html = document.querySelector(".js-html");

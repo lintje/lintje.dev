@@ -29,3 +29,5 @@ gem "bridgetown", "~> 1.0.0.beta3"
 gem "puma", "~> 5.5"
 
 gem "pry"
+
+gem "bridgetown-quick-search", "~> 1.1", :group => :bridgetown_plugins

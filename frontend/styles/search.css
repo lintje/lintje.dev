@@ -1,0 +1,56 @@
+bridgetown-search-form {
+  display: flex;
+  position: relative;
+  margin-top: var(--spacing-tiny);
+  justify-content: flex-end;
+}
+
+bridgetown-search-form input {
+  padding: 3px 10px;
+  font-size: 110%;
+  border: 1px solid #EEE;
+  border-radius: var(--border-radius);
+
+  -webkit-appearance: none;
+  -ms-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+}
+
+bridgetown-search-form input:focus {
+  border-color: var(--secondary-color);
+}
+
+bridgetown-search-results {
+  --link-color: var(--highlight-color);
+  --text-color: var(--body-color);
+  --divider-color: var(--secondary-color);
+  --border-corner-radius: var(--border-radius);
+  top: 40px;
+  font-size: 110%;
+  text-align: left;
+}
+
+bridgetown-search-results h1 {
+  color: var(--highlight-color);
+  text-decoration: underline;
+}
+
+@media (--mobile-breakpoint) {
+  bridgetown-search-form {
+    display: block;
+    margin: var(--spacing-small) 0;
+    padding: 0 var(--spacing-small);
+    width: 100%;
+    max-width: 100%;
+  }
+
+  bridgetown-search-form input {
+    width: calc(100% - var(--spacing-small));
+  }
+
+  bridgetown-search-results {
+    max-width: calc(100% - var(--spacing-small));
+  }
+}
