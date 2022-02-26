@@ -4,7 +4,11 @@ module PageMetadata
   end
 
   def page_meta_description
-    "TODO"
+    if view.resource.data.description
+      view.resource.data.description
+    else
+      site.metadata.description
+    end
   end
 
   def default_social_image_url
