@@ -5,14 +5,14 @@ title: "Git hooks"
 
 To lint the commit locally immediately after writing the commit message, use a Git hook. To add it, run the following in each project you want to use Lintje. If you want to set up a Git hook for all your projects, please read the [about global Git hooks section](#about-global-git-hooks).
 
-```
+```sh
 echo "lintje --hook-message-file=\$1" >> .git/hooks/commit-msg
 chmod +x .git/hooks/commit-msg
 ```
 
 If Lintje fails the commit is not saved. The message you entered is still available in `.git/COMMIT_EDITMSG` and you can restart your commit message with:
 
-```
+```sh
 git commit --edit --file=.git/COMMIT_EDITMSG
 ```
 
@@ -26,7 +26,7 @@ Git unfortunately does not support global hook that apply to all Git repositorie
 
 Personally I don't like how it fails the commit process and makes the commit message harder to reach to use again. It also makes making fixup commits really difficult. Instead I prefer not failing the commit hook and amending the commit afterwards to fix any issues that came up. The example below will have Lintje output the issues it found, but still make the commit. You can then amend the commit to fix any issues it found afterwards.
 
-```
+```sh
 echo "lintje --hook-message-file=\$1 || echo \"\\\nLintje failure\"" >> .git/hooks/commit-msg
 chmod +x .git/hooks/commit-msg
 ```

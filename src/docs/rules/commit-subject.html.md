@@ -43,7 +43,7 @@ Write commit subjects in the [imperative mood]. The commit is not actively "fixi
 
 Start the subject with something like "Fix ...", but not "Fixes ...", "Fixed ..." or "Fixing ...".
 
-```
+```md
 # Good
 Fix ...
 Test ...
@@ -83,7 +83,7 @@ You are of course free to start the subject with any other words than are listed
 
 The commit's subject starts with a whitespace (space, tab, etc). Remove this leading whitespace from the subject.
 
-```
+```md
 # Good
 Fix incorrect email validation
 
@@ -99,7 +99,7 @@ Fix incorrect email validation
 
 The commit's subject doesn't start with a capital letter. Use a capital letter to start the subject.
 
-```
+```md
 # Good
 Fix incorrect email validation
 
@@ -119,7 +119,7 @@ The commit's subject starts or ends with punctuation. Subjects don't need to end
 
 It may also be that a subject starts with an emoji, subjects also don't need to start with an emoji as a prefix of some kind.
 
-```
+```md
 # Good
 Fix incorrect email validation
 
@@ -145,7 +145,7 @@ The commit's subject includes a reference to a ticket or issue. Move this to the
 
 Invalid subject examples:
 
-```
+```md
 # Bad
 Fix #123
 I have fixed #123
@@ -161,7 +161,7 @@ Fix JIRA-123 for good
 
 The commit's subject contains a prefix of some kind. Remove prefixes from the commit subject and reword the subject to explain the change in more detail.
 
-```
+```md
 # Good
 Fix bad validation for user email validation
 Refactor the user email validation
@@ -187,7 +187,7 @@ fix(scope)!: ...
 
 The commit's subject contains a "skip ci" build tag. This should be moved to the message body. The skip Continuous Integration tag doesn't tell anything about what kind of change was made. It's metadata only for the Continuous Integration system.
 
-```
+```md
 # Bad
 // General
 Update README [ci skip]
@@ -232,7 +232,7 @@ The commit's subject is considered to be a cliché, it's overused and adds littl
 
 To resolve this issue, expand the subject to explain the change in more detail. Describe what type of bug was fixed and what type of change was made.
 
-```
+```md
 # Bad
 WIP
 Fix

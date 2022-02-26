@@ -15,7 +15,7 @@ Lintje accepts a range of commits to check as arguments. If no arguments are giv
 
 To validate a specific Git commit, pass in the commit SHA or selectors like `HEAD~3`. Any valid `git log` commit selector will work.
 
-```
+```sh
 # Lint the most recent commit on the current branch:
 lintje
 # Which is the same as:
@@ -29,7 +29,7 @@ lintje 3a561ef766c2acfe5da478697d91758110b8b24c
 
 Lintje can also validate a range of commits, like [all commits in a Pull Request][automated review]. The argument given to the `lintje` command should the range of commits that should be validated. Any valid `git log` commit range will work.
 
-```
+```sh
 # Lint the last 5 commits:
 lintje HEAD~5..HEAD
 

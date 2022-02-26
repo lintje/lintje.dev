@@ -13,7 +13,7 @@ The rules listed on this page are about the Git branch on which commits are made
 
 The branch name is detected as too short. A branch name needs to be at least four characters.
 
-```
+```md
 # Good branch names
 main
 develop
@@ -33,7 +33,7 @@ bug
 
 The branch name is detected to only contain a ticket number or a prefix and ticket number. Ticket numbers alone don't communicate much, especially if all branches are formatted this way. Describe the branch in more detail, in a couple words, to explain what the change is about. Ticket numbers are accepted, but not as the only thing in the branch name.
 
-```
+```md
 # Good branch names
 123-email-validation
 123_fix_email_validation
@@ -63,7 +63,7 @@ JIRA-123
 
 The branch name starts or ends with punctuation. Branch names should not use punctuation this way.
 
-```
+```md
 # Good branch names
 fix-email-validation
 fix_email_validation
@@ -90,7 +90,7 @@ The branch name is considered to be a cliché, it's overused and adds little mea
 
 To resolve this issue, expand the branch name to explain the change in more detail. Describe what type of bug was fixed and what type of change was made.
 
-```
+```md
 # Bad
 wip
 wip-feature
