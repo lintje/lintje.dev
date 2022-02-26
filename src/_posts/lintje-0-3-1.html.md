@@ -20,3 +20,5 @@ Version 0.3.1 is out with better support for GitLab and less failures on differe
 - Better detect GitLab Merge Request references. Update the SubjectTicketNumber
   rule to also detect references to Merge Requests in GitLab that uses
   exclamation marks `!` instead of `#`.
+
+<%= release_link "0.3.1" %>

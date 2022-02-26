@@ -23,3 +23,5 @@ Also in this release: improved Unicode support 🚀
       highlight where exactly the problem was detected in a commit subject,
       commit message, commit diff or branch name to make it easier to resolve
       the problem.
+
+<%= release_link "0.6.0" %>

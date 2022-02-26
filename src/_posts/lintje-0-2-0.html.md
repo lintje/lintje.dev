@@ -22,3 +22,5 @@ More rules and more checks for existing rules were added.
   the subject. Subjects should not start with an emoji as a prefix.
 - Expand SubjectPunctuation rule to check for more Unicode punctuation.
 - Add Microsoft Windows release build.
+
+<%= release_link "0.2.0" %>

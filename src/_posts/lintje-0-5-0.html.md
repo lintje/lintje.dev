@@ -26,3 +26,5 @@ Lintje now checks for empty commits in version 0.5.0! It also show less issues t
 - Ignore SubjectCapitalization rule if the subject already has a SubjectPrefix
   violation. This reduces the number of violations that are printed when a
   prefix is found in the commit, which is the violation that takes priority.
+
+<%= release_link "0.5.0" %>

@@ -13,3 +13,5 @@ More rules for commit subjects.
   "fix: bug", "fix!: bug", "fix(scope): bug", and suggest to remove them.
 - Update SubjectCliche to catch more types of clichés, such as only "fix". The
   check is now also case insensitive, so "Fix", "fix" and "FIX" are all caught.
+
+<%= release_link "0.3.0" %>

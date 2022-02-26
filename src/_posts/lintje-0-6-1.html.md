@@ -33,3 +33,5 @@ Lintje 0.6.1 is out 🚀 Lintje will prints less warnings on commits that need t
   default/"strip" cleanup mode. This way leading comment lines are not
   interpreted as subjects and Lintje won't print violations about those
   subjects.
+
+<%= release_link "0.6.1" %>

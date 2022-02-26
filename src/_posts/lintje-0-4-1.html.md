@@ -9,3 +9,5 @@ Tiny bug fix release for error handling when fetching Git config.
 
 - Fix error handling for Git hook mode when no `core.commentChar` or
   `commit.cleanup` is configured in Git.
+
+<%= release_link "0.4.1" %>
