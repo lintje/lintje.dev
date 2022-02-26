@@ -1,6 +1,7 @@
 ---
 layout: docs
 title: "Usage"
+description: "Learn more about how you can use Lintje and what options are available."
 ---
 
 Lintje is a command line tool. After [installation] Lintje can be called with the `lintje` command.

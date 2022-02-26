@@ -1,6 +1,7 @@
 ---
 layout: docs
 title: "Automated review"
+description: "Set up Lintje in your Continuous Integration system to check Lintje's rules for every commit pushed to a repository."
 ---
 
 This page contains examples of how to use Lintje in different scenarios and setups like Continuous Integration systems.

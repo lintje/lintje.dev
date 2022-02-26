@@ -1,6 +1,7 @@
 ---
 layout: docs
 title: "Configuration"
+description: "Learn more about how to configure Lintje for each commit Lintje validates."
 ---
 
 Lintje does not have a configuration file where you can enable/disable/configure certain rules for an entire project.

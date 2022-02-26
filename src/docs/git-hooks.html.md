@@ -1,6 +1,7 @@
 ---
 layout: docs
 title: "Git hooks"
+description: "Learn how to set up Git hooks to validate commits while making them."
 ---
 
 To lint the commit locally immediately after writing the commit message, use a Git hook. To add it, run the following in each project you want to use Lintje. If you want to set up a Git hook for all your projects, please read the [about global Git hooks section](#about-global-git-hooks).

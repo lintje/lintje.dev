@@ -1,6 +1,7 @@
 ---
 layout: docs
 title: "Support"
+description: "Need help with Lintje? This is the place to ask for help."
 ---
 
 Need help with Lintje? Found a bug or have a question?

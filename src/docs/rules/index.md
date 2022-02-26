@@ -1,9 +1,10 @@
 ---
 layout: docs
 title: "Lintje rules"
+description: "Learn more about the different types of rules Lintje checks for, how they work and how to resolve any issues."
 ---
 
-All the rules Lintje follows are documented in this rules section. The heading name matches the rule name, and can be used to [ignore specific rules per commit](/docs/configuration.html#ignoring-rules-per-commit).
+All the rules Lintje follows are documented in this rules section. Visit the sub-pages for [each type of rule](#available-rule-types). The headings on each page matches the rule names, and can be used to [ignore specific rules per commit](/docs/configuration.html#ignoring-rules-per-commit).
 
 _Lintje is primarily focussed on supporting the English language, other languages may not be compatible with every rule currently. Please [create an issue][issues] if you run into any problems._
 

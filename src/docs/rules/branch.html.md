@@ -1,6 +1,7 @@
 ---
 layout: docs
 title: "Branch rules"
+description: "Read about Lintje's rules for Git branches. Descriptive branch names are important, so that people can identify the topic of the change by just the name alone."
 ---
 
 The rules listed on this page are about the Git branch on which commits are made. Descriptive branch names are important, so that people can identify the topic of the change by just the name alone.

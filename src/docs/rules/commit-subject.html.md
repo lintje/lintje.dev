@@ -1,9 +1,10 @@
 ---
 layout: docs
 title: "Commit subject rules"
+description: "Read about Lintje's rules for Git commit subjects. The subject is the first thing other people see when they look at an individual commit or a history of a branch or Pull Request. That commit subjects are clear and to the point is important."
 ---
 
-The rules listed on this page are about the Git commit subject. This is the first thing other people see when they look at an individual commit or a history of a branch or Pull Request. That commit subjects are clear and to the point is important.
+The rules listed on this page are about the Git commit subject. The subject is the first thing other people see when they look at an individual commit or a history of a branch or Pull Request. That commit subjects are clear and to the point is important.
 
 <%= toc %>
 

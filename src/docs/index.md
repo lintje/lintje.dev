@@ -1,6 +1,7 @@
 ---
 layout: docs
 title: "Documentation"
+description: "Read more about how Lintje works by reading the documentation. It will help you set up Lintje and explain how to resolve issues."
 ---
 
 Welcome to Lintje! A Git linter made for people. Lintje will help you and your team write better commit messages, branch and Pull Requests. Add Lintje to your local setup and the project's Continuous Integration to make sure everyone is following the same rules.

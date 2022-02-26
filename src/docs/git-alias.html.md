@@ -1,6 +1,7 @@
 ---
 layout: docs
 title: "Git alias"
+description: "Learn how to set up a Git alias to use in your workflow."
 ---
 
 It's possible to set up an alias with Git to use `git lint` as the command instead, or any other alias you prefer.

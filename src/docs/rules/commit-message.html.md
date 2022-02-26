@@ -1,6 +1,7 @@
 ---
 layout: docs
 title: "Commit message rules"
+description: "Read about Lintje's rules for Git commit messages. Descriptive commit messages are important during reviews and whenever someone looks back and has found a commit to contain a relevant change."
 ---
 
 The rules listed on this page are about the Git commit message. Descriptive commit messages are important during reviews and whenever someone looks back and has found a commit to contain a relevant change.
