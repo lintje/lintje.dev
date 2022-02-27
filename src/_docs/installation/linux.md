@@ -2,9 +2,25 @@
 title: "Linux installation"
 ---
 
-- [Debian](#debian) - Debian / Ubuntu
+<%= toc %>
 
 [Back to installation section](/docs/installation).
+
+## Homebrew for Linux
+
+To install Lintje on Linux use the [Homebrew](https://brew.sh) tap.
+
+```
+brew tap tombruijn/lintje
+brew install lintje
+```
+
+Whenever a new version comes out run the following:
+
+```
+brew update
+brew upgrade lintje
+```
 
 ## Cloudsmith hosting
 
