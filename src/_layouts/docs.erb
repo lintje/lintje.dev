@@ -17,7 +17,7 @@ layout_class: "foo"
 
       <h2>Setup</h2>
       <ul>
-        <li><%= link_to_active "Installation", "/docs/installation" %></li>
+        <li><%= link_to_active "Installation", "/docs/installation", %r{^/docs/installation.*} %></li>
         <li><%= link_to_active "Git hooks", "/docs/git-hooks" %></li>
         <li><%= link_to_active "Git alias", "/docs/git-alias" %></li>
         <li><%= link_to_active "Automated Review", "/docs/automated-review" %></li>
