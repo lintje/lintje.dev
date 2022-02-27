@@ -1,5 +1,6 @@
 code {
-  font-size: 110%;
+  font-size: 90%;
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
 }
 
 pre {
@@ -36,8 +37,11 @@ pre:not(:last-child) {
   }
 }
 
-code {
-  font-family: monospace;
+.highlight-custom .color-red {
+  color: var(--code-red-color);
+}
+.highlight-custom .color-orange {
+  color: var(--code-orange-color);
 }
 
 /* Default pygments color scheme */
