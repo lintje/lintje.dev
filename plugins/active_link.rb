@@ -5,6 +5,8 @@ module ActiveLink
   end
 
   def current_path
+    return unless view.resource.destination
+
     path = view.resource.destination.relative_url
     if path.length > 1
       path.sub(/\/$/, "")

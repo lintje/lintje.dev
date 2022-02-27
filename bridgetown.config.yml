@@ -27,6 +27,9 @@ collections:
     name: Documentation
   posts:
     permalink: "/posts/:slug/"
+  dev:
+    output: false
+    permalink: "/_dev/:path/"
 
 # Other options you might want to investigate:
 #

@@ -1,0 +1,42 @@
+.media-resources {
+  padding: var(--spacing-normal);
+}
+
+.media-icon-500,
+.media-icon-180,
+.media-icon-16,
+.media-icon-32 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--media-icon-size);
+  height: var(--media-icon-size);
+
+  text-align: center;
+  background-color: var(--highlight-color);
+}
+.media-icon-500 span,
+.media-icon-180 span,
+.media-icon-16 span,
+.media-icon-32 span {
+  color: #FFF;
+  font-family: serif;
+  font-style: italic;
+}
+
+.media-icon-500 {
+  --media-icon-size: 500px;
+  font-size: 410px;
+}
+.media-icon-180 {
+  --media-icon-size: 180px;
+  font-size: 160px;
+}
+.media-icon-16 {
+  --media-icon-size: 16px;
+  font-size: 16px;
+}
+.media-icon-32 {
+  --media-icon-size: 32px;
+  font-size: 28px;
+}

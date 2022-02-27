@@ -2,6 +2,8 @@ require "digest"
 
 module PageMetadata
   def canonical_url
+    return unless view.resource.destination
+
     view.resource.destination.absolute_url.sub(/\/$/, "")
   end
 
@@ -13,8 +15,17 @@ module PageMetadata
     end
   end
 
+  def image_path(path)
+    file_checksum = Digest::MD5.file(File.join("src", path))
+    "/#{path}?#{file_checksum}"
+  end
+
+  def apple_touch_icon_path
+    absolute_url image_path("images/apple-touch-icon.png")
+  end
+
   def default_social_image_url
-    "TODO"
+    absolute_url image_path("images/social-media.png")
   end
 
   def article?
