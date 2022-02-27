@@ -18,6 +18,14 @@ Inspiration for Lintje's rules:
 
 Read the [rules pages](/docs/rules) for all the rules Lintje checks and how to fix them.
 
+## Workflow
+
+Lintje does not enforce a particular workflow. Commits don't require a template. Commits don't need to be perfect on the first try, which is why I recommend [not exiting the commit process](/docs/git-hooks#validation-without-exiting-the-commit) when Lintje encounters an issue.
+
+You can make [atomic commits](https://en.wikipedia.org/wiki/Atomic_commit) or you can make no commits. Make as many "WIP" commits as needed while you're fixing a bug or working on a feature.
+
+When it's time to share your work with your team, or push it to a public repository, go back to these "WIP" commits and __rewrite the Git history__. Rewriting the branch history you will squash commits, split commits and rewrite commit messages to tell a detailed story in smaller parts. This way the final result of your work is more readable by your team and any future debuggers.
+
 ## Git for machines
 
 Lintje does not actively promote machine parsing of commit subjects and messages for the purposes of generating changelogs automatically.
