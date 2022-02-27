@@ -38,13 +38,13 @@ module PageMetadata
   end
 
   def csp_policy
-    if Bridgetown.env.development?
-      script_src = " 'unsafe-inline'"
-      style_src = " 'unsafe-inline'"
-    else
-      script_src = " 'sha256-#{plausible_script_sha256}'"
-    end
-    raw "default-src 'none'; script-src 'self' https://plausible.io #{script_src}; connect-src 'self' https://plausible.io; img-src 'self'; style-src 'self'#{style_src}; base-uri 'self'; form-action 'self'"
+    script_src =
+      if Bridgetown.env.development?
+        "'unsafe-inline'"
+      else
+        "'sha256-#{plausible_script_sha256}'"
+      end
+    raw "default-src 'none'; script-src 'self' https://plausible.io #{script_src}; connect-src 'self' https://plausible.io; img-src 'self'; style-src 'self' 'unsafe-inline'; base-uri 'self'; form-action 'self'"
   end
 
   def plausible_script
