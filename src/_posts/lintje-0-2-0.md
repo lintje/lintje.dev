@@ -23,4 +23,7 @@ More rules and more checks for existing rules were added.
 - Expand SubjectPunctuation rule to check for more Unicode punctuation.
 - Add Microsoft Windows release build.
 
-<%= release_link "0.2.0" %>
+---
+
+- <%= release_link "0.2.0" %>
+- View the <%= link_to "installation guide", "/docs/installation" %> for installation methods and ways to upgrade.

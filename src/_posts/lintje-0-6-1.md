@@ -34,4 +34,7 @@ Lintje 0.6.1 is out 🚀 Lintje will prints less warnings on commits that need t
   interpreted as subjects and Lintje won't print violations about those
   subjects.
 
-<%= release_link "0.6.1" %>
+---
+
+- <%= release_link "0.6.1" %>
+- View the <%= link_to "installation guide", "/docs/installation" %> for installation methods and ways to upgrade.

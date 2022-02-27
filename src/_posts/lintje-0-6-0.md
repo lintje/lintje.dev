@@ -24,4 +24,7 @@ Also in this release: improved Unicode support 🚀
       commit message, commit diff or branch name to make it easier to resolve
       the problem.
 
-<%= release_link "0.6.0" %>
+---
+
+- <%= release_link "0.6.0" %>
+- View the <%= link_to "installation guide", "/docs/installation" %> for installation methods and ways to upgrade.

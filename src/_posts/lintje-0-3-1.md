@@ -21,4 +21,7 @@ Version 0.3.1 is out with better support for GitLab and less failures on differe
   rule to also detect references to Merge Requests in GitLab that uses
   exclamation marks `!` instead of `#`.
 
-<%= release_link "0.3.1" %>
+---
+
+- <%= release_link "0.3.1" %>
+- View the <%= link_to "installation guide", "/docs/installation" %> for installation methods and ways to upgrade.

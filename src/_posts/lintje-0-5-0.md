@@ -27,4 +27,7 @@ Lintje now checks for empty commits in version 0.5.0! It also show less issues t
   violation. This reduces the number of violations that are printed when a
   prefix is found in the commit, which is the violation that takes priority.
 
-<%= release_link "0.5.0" %>
+---
+
+- <%= release_link "0.5.0" %>
+- View the <%= link_to "installation guide", "/docs/installation" %> for installation methods and ways to upgrade.

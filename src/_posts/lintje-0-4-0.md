@@ -33,4 +33,7 @@ Branch name validation is now in Lintje! Check out all the improvements in versi
 - Print the singular "violation" label when Lintje only finds one violation.
 - Print number of ignored commits, if any commits are ignored.
 
-<%= release_link "0.4.0" %>
+---
+
+- <%= release_link "0.4.0" %>
+- View the <%= link_to "installation guide", "/docs/installation" %> for installation methods and ways to upgrade.

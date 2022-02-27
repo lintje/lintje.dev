@@ -14,4 +14,7 @@ More rules for commit subjects.
 - Update SubjectCliche to catch more types of clichés, such as only "fix". The
   check is now also case insensitive, so "Fix", "fix" and "FIX" are all caught.
 
-<%= release_link "0.3.0" %>
+---
+
+- <%= release_link "0.3.0" %>
+- View the <%= link_to "installation guide", "/docs/installation" %> for installation methods and ways to upgrade.
