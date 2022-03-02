@@ -31,7 +31,7 @@ The commit's message body is empty or too short. Add a message body to the commi
 
 ### Notes about messages presence
 
-- This rule is skipped if a [NeedsRebase] issue is found. To fix a NeedsRebase issue the commit needs to be rebased into the commit it's marked to fixup or squash, and there will be no need to add a message body.*
+- This rule is skipped if a [NeedsRebase] issue is found. To fix a NeedsRebase issue the commit needs to be rebased into the commit it's marked to fixup or squash, and there will be no need to add a message body.
 
 ## MessageLineLength
 
