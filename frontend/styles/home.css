@@ -47,6 +47,10 @@
   font-size: 1rem;
 }
 
+.cta {
+  margin-top: var(--spacing-normal);
+}
+
 @media (--mobile-breakpoint) {
   .home-page {
     font-size: 1.1em;
