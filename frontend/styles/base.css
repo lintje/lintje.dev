@@ -83,7 +83,7 @@ h3,
 h4 {
   color: var(--highlight-color);
   font-weight: bold;
-  line-height: 1.2;
+  line-height: 1;
   word-break: break-word;
 }
 
