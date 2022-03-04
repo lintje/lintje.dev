@@ -41,7 +41,6 @@
 
   display: inline-block;
 
-  color: var(--highlight-color);
   font-size: 80px;
   font-family: serif;
   font-style: italic;
@@ -49,6 +48,7 @@
 
 .header .logo a {
   display: block;
+  color: var(--highlight-color);
   text-decoration-thickness: 4px;
 }
 

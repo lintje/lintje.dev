@@ -25,7 +25,9 @@
 
 .navigation a:hover,
 .navigation a.active {
-  background-color: var(--secondary-color);
+  color: var(--navigation-active-color);
+  background-color: var(--navigation-active-background);
+  text-decoration-color: var(--navigation-active-underline-color);
 }
 
 .navigation #menu-open {

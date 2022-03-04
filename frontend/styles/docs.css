@@ -36,8 +36,10 @@
 }
 
 .docs-navigation a.active {
+  color: var(--navigation-active-color);
   font-weight: bold;
-  background-color: var(--secondary-color);
+  background-color: var(--navigation-active-background);
+  text-decoration-color: var(--navigation-active-underline-color);
 }
 
 .docs-page .content {
