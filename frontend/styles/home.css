@@ -55,6 +55,11 @@
 
 .cta {
   margin-top: var(--spacing-normal);
+  text-align: center;
+}
+
+.download-link {
+  font-size: 0.8em;
 }
 
 @media (--mobile-breakpoint) {
