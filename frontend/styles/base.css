@@ -5,6 +5,7 @@
   --highlight-color: #5000CA;
   --secondary-color: #CD4631;
   --secondary-color-light: #F3EBFF;
+  --heading-color: #2b2c34;
   --code-red-color: #D00000;
   --code-orange-color: #9F5100;
 
@@ -81,7 +82,7 @@ h1,
 h2,
 h3,
 h4 {
-  color: var(--highlight-color);
+  color: var(--heading-color);
   font-weight: bold;
   line-height: 1;
   word-break: break-word;
@@ -89,6 +90,7 @@ h4 {
 
 h1 {
   margin-bottom: 20px;
+  color: var(--highlight-color);
   font-size: 3.5rem;
 }
 
