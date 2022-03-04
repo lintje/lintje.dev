@@ -37,14 +37,16 @@
 
 .box {
   padding: var(--spacing-small);
-  border-radius: var(--border-radius);
-  box-shadow: 0px 2px 6px -2px var(--body-color);
-  border: 1px solid var(--secondary-color);
-  border-bottom-width: 5px;
+  border-radius: var(--border-radius-tiny);
+  background-color: var(--secondary-color-light);
+}
+
+.box a {
+  font-size: 1.1em;
 }
 
 .box p {
-  font-size: 1rem;
+  font-size: 1em;
 }
 
 .cta {
