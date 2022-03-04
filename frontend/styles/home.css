@@ -31,7 +31,7 @@
 }
 
 .dark-section {
-  background-color: var(--secondary-color-light);
+  background-color: var(--secondary-color);
 }
 
 .columns {
@@ -42,7 +42,7 @@
 .box {
   padding: var(--spacing-small);
   border-radius: var(--border-radius-tiny);
-  background-color: var(--secondary-color-light);
+  background-color: var(--secondary-color);
 }
 
 .box a {

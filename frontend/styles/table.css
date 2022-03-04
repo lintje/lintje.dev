@@ -5,7 +5,7 @@ table {
 }
 
 tr:nth-child(2n) td {
-  background-color: var(--secondary-color-light);
+  background-color: var(--secondary-color);
 }
 
 th,

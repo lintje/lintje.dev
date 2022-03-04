@@ -37,7 +37,7 @@
 
 .docs-navigation a.active {
   font-weight: bold;
-  background-color: var(--secondary-color-light);
+  background-color: var(--secondary-color);
 }
 
 .docs-page .content {
@@ -50,7 +50,7 @@
   margin-bottom: var(--spacing-tiny);
   padding: 5px;
   text-align: center;
-  background-color: var(--secondary-color-light);
+  background-color: var(--secondary-color);
 }
 
 @media (--mobile-breakpoint) {

@@ -3,8 +3,8 @@
   --body-background: #F7F7F7;
 
   --highlight-color: #5000CA;
-  --secondary-color: #CD4631;
-  --secondary-color-light: #F3EBFF;
+  --secondary-color: #efe9fb;
+  --tertiary-color: #CD4631;
   --heading-color: #2b2c34;
   --code-red-color: #D00000;
   --code-orange-color: #9F5100;
@@ -70,7 +70,7 @@ a {
   color: var(--highlight-color);
   text-decoration: underline;
   text-decoration-skip-ink: all;
-  text-decoration-color: var(--secondary-color);
+  text-decoration-color: var(--tertiary-color);
   transition: all 150ms ease-in-out;
 }
 

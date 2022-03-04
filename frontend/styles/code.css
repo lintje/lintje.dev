@@ -16,7 +16,7 @@ p code,
 li code {
   display: inline-block;
   padding: 0 4px;
-  background-color: var(--secondary-color-light);
+  background-color: var(--secondary-color);
 }
 
 .highlighter-rouge pre {

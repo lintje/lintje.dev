@@ -19,13 +19,13 @@ bridgetown-search-form input {
 }
 
 bridgetown-search-form input:focus {
-  border-color: var(--secondary-color);
+  border-color: var(--tertiary-color);
 }
 
 bridgetown-search-results {
   --link-color: var(--highlight-color);
   --text-color: var(--body-color);
-  --divider-color: var(--secondary-color);
+  --divider-color: var(--tertiary-color);
   --border-corner-radius: var(--border-radius);
   top: 40px;
   font-size: 110%;
