@@ -32,7 +32,7 @@
 .docs-navigation a {
   display: block;
   padding: 2px 10px;
-  border-radius: 5px;
+  border-radius: var(--border-radius-tiny);
 }
 
 .docs-navigation a.active {

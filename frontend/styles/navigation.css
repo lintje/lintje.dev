@@ -15,7 +15,7 @@
   display: block;
   padding: 5px 15px;
   color: var(--highlight-color);
-  border-radius: var(--border-radius);
+  border-radius: var(--border-radius-tiny);
 }
 
 .navigation a:hover {
@@ -53,7 +53,7 @@
   width: 20px;
   height: 2px;
   background-color: var(--highlight-color);
-  border-radius: var(--border-radius);
+  border-radius: var(--border-radius-tiny);
   transition-property: transform;
   transition-timing-function: cubic-bezier(.55,.055,.675,.19);
   transition-duration: .22s;
@@ -67,7 +67,7 @@
   width: 20px;
   height: 2px;
   background-color: var(--highlight-color);
-  border-radius: var(--border-radius);
+  border-radius: var(--border-radius-tiny);
 }
 
 .navigation .menu-icon-inner:before {

@@ -1,16 +1,15 @@
 .button {
-  position: relative;
   display: inline-block;
   margin: 0 auto;
-  padding: 5px 20px;
+  padding: 15px 25px;
 
   color: #FFF;
   text-decoration: none;
   background-color: var(--highlight-color);
-  border-radius: var(--border-radius);
+  border-radius: var(--border-radius-tiny);
 }
 
 .button:hover {
-  top: 2px;
   background-color: #3F009F;
+  box-shadow: 0 5px 15px -10px rgba(31, 18, 53, 0.6);
 }

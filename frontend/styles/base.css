@@ -22,6 +22,7 @@
   --spacing-tiny: 10px;
 
   --border-radius: 15px;
+  --border-radius-tiny: 5px;
 }
 
 @custom-media --mobile-breakpoint (max-width: 750px);
