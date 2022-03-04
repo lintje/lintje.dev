@@ -26,6 +26,10 @@
   margin-bottom: 0;
 }
 
+.hero-section p {
+  text-align: center;
+}
+
 .dark-section {
   background-color: var(--secondary-color-light);
 }
@@ -61,6 +65,10 @@
   .home-section {
     padding-top: 40px;
     padding-bottom: 40px;
+  }
+
+  .hero-section p {
+    text-align: left;
   }
 
   .columns {
