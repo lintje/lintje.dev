@@ -64,10 +64,6 @@
   background-color: var(--secondary-color);
 }
 
-.dark-section .button {
-  background-color: var(--tertiary-dark-color);
-}
-
 .columns {
   display: flex;
   gap: var(--spacing-normal);
