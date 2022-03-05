@@ -1,10 +1,11 @@
 @custom-media --mobile-breakpoint (max-width: 750px);
 
 :root {
-  --body-color: #2A2A2A;
+  --body-color: #2b2c34;
   --body-background: #F7F7F7;
 
-  --highlight-color: #5000CA;
+  --logo-color: #5000CA;
+  --highlight-color: #5F0BDF;
   --secondary-color: #efe9fb;
   --tertiary-color: #CD4631;
   --heading-color: #2b2c34;
@@ -30,7 +31,7 @@
   --header-height: 145px;
   --footer-content-height: 75px;
   --footer-shape-height: 100px;
-  --footer-total-height: calc(var(--footer-content-height) + var(--footer-shape-height) + var(--spacing-small));
+  --footer-total-height: calc(var(--footer-content-height) + var(--footer-shape-height));
   --docs-nav-width: 220px;
   --spacing-normal: 40px;
   --spacing-small: 20px;
