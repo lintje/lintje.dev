@@ -15,7 +15,8 @@
 }
 
 .home-section {
-  padding: 80px 20px;
+  --spacing-y: 80px;
+  padding: var(--spacing-y) 20px;
 }
 
 .home-section:first-child {
@@ -31,7 +32,40 @@
 }
 
 .dark-section {
+  --shape-height: 50px;
+  padding-top: calc(var(--shape-height) + var(--spacing-y));
+  position: relative;
   background-color: var(--secondary-color);
+}
+
+.dark-section:before,
+.dark-section:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: var(--shape-height);
+}
+
+.dark-section:before {
+  z-index: 2;
+
+  background-image: url(/images/shape-3.svg);
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  transform: rotate(180deg);
+}
+
+.dark-section:after {
+  z-index: 1;
+
+  background-color: var(--secondary-color);
+}
+
+.dark-section .button {
+  background-color: var(--tertiary-dark-color);
 }
 
 .columns {
@@ -68,12 +102,15 @@
   }
 
   .home-section {
-    padding-top: 40px;
-    padding-bottom: 40px;
+    --spacing-y: 40px;
   }
 
   .hero-section p {
     text-align: left;
+  }
+
+  .dark-section {
+    --shape-height: 20px;
   }
 
   .columns {
