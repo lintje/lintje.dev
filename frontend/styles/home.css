@@ -64,6 +64,10 @@
   background-color: var(--secondary-color);
 }
 
+.getting-started-section {
+  padding-top: 0;
+}
+
 .columns {
   display: flex;
   gap: var(--spacing-normal);
