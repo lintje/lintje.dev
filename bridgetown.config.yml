@@ -18,6 +18,7 @@ url: "https://lintje.dev"
 
 permalink: pretty_ext
 template_engine: erb
+markdown: CustomMarkdownProcessor
 
 collections:
   docs:
