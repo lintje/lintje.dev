@@ -1,5 +1,5 @@
 ---
-title: "Geting started"
+title: "Getting started"
 ---
 
 ## Installing Lintje
