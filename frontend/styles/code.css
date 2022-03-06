@@ -5,7 +5,7 @@ code {
 }
 
 pre {
-  margin-bottom: 40px;
+  margin: 0;
   padding: 10px 20px;
   max-width: 100%;
   background-color: #F1F1F1;
@@ -20,10 +20,6 @@ li code {
   padding: 0 4px;
   background-color: var(--code-inline-background);
   border-radius: var(--border-radius-tiny);
-}
-
-.highlighter-rouge pre {
-  margin: 0;
 }
 
 .highlighter-rouge:not(:last-child):not(code),
