@@ -46,7 +46,7 @@ module PageMetadata
       if Bridgetown.env.development?
         "'unsafe-inline'"
       else
-        "'sha256-#{plausible_script_sha256}'"
+        "'sha256-#{sha256_for plausible_script}' 'sha256-#{sha256_for plausible_404_script}'"
       end
     raw "default-src 'none'; script-src 'self' https://plausible.io #{script_src}; connect-src 'self' https://plausible.io; img-src 'self'; style-src 'self' 'unsafe-inline'; base-uri 'self'; form-action 'self'"
   end
@@ -55,8 +55,12 @@ module PageMetadata
     "window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }"
   end
 
-  def plausible_script_sha256
-    Digest::SHA256.base64digest(plausible_script)
+  def plausible_404_script
+    %(plausible("404",{ props: { path: document.location.pathname } });)
+  end
+
+  def sha256_for(script)
+    Digest::SHA256.base64digest(script)
   end
 
   # Get the last modified date by asking Git for this time.

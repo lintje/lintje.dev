@@ -9,5 +9,5 @@ title: "Page not found"
 <p>The requested page could not be found.</p>
 
 <% if Bridgetown.env.production? %>
-<script>plausible("404",{ props: { path: document.location.pathname } });</script>
+<script><%= raw plausible_404_script %></script>
 <% end %>
