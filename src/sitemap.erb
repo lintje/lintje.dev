@@ -1,0 +1,22 @@
+---
+sitemap: false
+permalink: sitemap.xml
+---
+
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <% collections.each_value do |collection| %>
+    <%# Skip if output is false and it should not be published %>
+    <% next unless collection.metadata.output %>
+    <% collection.resources.each do |resource| %>
+      <%# Skip if explicitly configured the `sitemap` metadata to false %>
+      <% next if resource.data.sitemap == false %>
+      <%# Skip if auto generated search json file from the Bridgetown quick search gem %>
+      <% next if resource.relative_path.to_s.end_with?("bridgetown_quick_search/index.json") %>
+      <url>
+        <loc><%= xml_escape canonical_url_for(resource) %></loc>
+        <lastmod><%= file_last_modified_at(resource.path)&.utc&.xmlschema %></lastmod>
+      </url>
+    <% end %>
+  <% end %>
+</urlset>

@@ -1,10 +1,14 @@
 require "digest"
 
 module PageMetadata
-  def canonical_url
-    return unless view.resource.destination
+  def canonical_url_for(resource)
+    return unless resource.destination
 
-    view.resource.destination.absolute_url.sub(/\/$/, "")
+    resource.destination.absolute_url.sub(/\/$/, "")
+  end
+
+  def canonical_url
+    canonical_url_for(view.resource)
   end
 
   def page_meta_description
@@ -53,6 +57,14 @@ module PageMetadata
 
   def plausible_script_sha256
     Digest::SHA256.base64digest(plausible_script)
+  end
+
+  # Get the last modified date by asking Git for this time.
+  # The modified date for the file on the file system doesn't indicate when it
+  # was last changed in a meaningful way, only saved.
+  def file_last_modified_at(path)
+    date = `git log -n 1 --pretty="%cI" "#{path}"`
+    Time.parse(date) if date
   end
 end
 
