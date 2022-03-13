@@ -59,6 +59,18 @@ To accommodate for the "commit-msg" Git hook, the `--hook-message-file` option a
 lintje --hook-message-file .git/COMMIT_MESSAGE
 ```
 
+## Hints
+
+<%= version_label "0.7.0" %>
+
+Hints provide suggestions how to improve commits. For example, a commit may not link back to an issue. Lintje will suggest adding a reference to the relevant issue. Hints do not need to be resolved before Lintje will approve the commit.
+
+To run Lintje without printing hints, use the `--no-hints` flag.
+
+```
+lintje --no-hints
+```
+
 ## Colorized output
 
 <%= version_label "0.7.0" %>
@@ -79,7 +91,7 @@ lintje --no-color
 
 Lintje will exit with the following status codes in these situations:
 
-- `0` (Success) - No issues have been found. The commit is accepted.
+- `0` (Success) - No error issues have been found. The commit is accepted. Hints are ignored.
 - `1` (Failure) - One or more issues have been found. The commit is not accepted.
 - `2` (Error) - An internal error occurred and the program had to exit. This is probably a bug, please report it in the [issue tracker][issues].
 
