@@ -68,7 +68,7 @@ module PageMetadata
   # was last changed in a meaningful way, only saved.
   def file_last_modified_at(path)
     date = `git log -n 1 --pretty="%cI" "#{path}"`
-    Time.parse(date) if date
+    Time.parse(date) if date.present?
   end
 end
 
