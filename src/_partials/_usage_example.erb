@@ -1,11 +1,11 @@
 <pre class="highlight-custom"><code>$ lintje
-<span class="color-red">SubjectCliche</span>: The subject does not explain the change in much detail
+<span class="color-red">Error[SubjectCliche]</span>: The subject does not explain the change in much detail
   9a2ae29:1:1: Fix bug
     |
   1 | Fix bug
     | <span class="color-orange">^^^^^^^ Describe the change in more detail</span>
 
-<span class="color-red">MessagePresence</span>: No message body was found
+<span class="color-red">Error[MessagePresence]</span>: No message body was found
   9a2ae29:3:1: Fix bug
     |
   1 | Fix bug
@@ -13,7 +13,7 @@
   3 |
     | <span class="color-orange">^ Add a message body with context about the change and why it was made</span>
 
-<span class="color-red">BranchNameTicketNumber</span>: A ticket number was detected in the branch name
+<span class="color-red">Error[BranchNameTicketNumber]</span>: A ticket number was detected in the branch name
   Branch:1: fix-123
   |
   | fix-123

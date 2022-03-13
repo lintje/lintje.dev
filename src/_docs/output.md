@@ -14,7 +14,7 @@ This output is written in such a way to help you identify what issue was found, 
 The example below is an error about the commit's subject ending with punctuation.
 
 ```
-SubjectPunctuation: The subject ends with a punctuation character: `!`
+Error[SubjectPunctuation]: The subject ends with a punctuation character: `!`
   f9952f7:1:8: Fix bug!
     |
   1 | Fix bug!
@@ -49,7 +49,7 @@ In the example above the location data is separated by colon (`:`) symbols. Each
 In the example below a commit's subject contains a ticket number. The issue output highlights the ticket number in the subject with the `^` symbols on the line below. The message behind those symbols suggests a course of action to the reader.
 
 ```
-SubjectTicketNumber: The subject contains a ticket number
+Error[SubjectTicketNumber]: The subject contains a ticket number
   b38a8e5:1:10: Fix bug. Closes #123
     |
   1 | Fix bug. Closes #123
@@ -63,7 +63,7 @@ SubjectTicketNumber: The subject contains a ticket number
 For errors, Lintje may make a suggestion on how to resolve the issue. It will also print the new suggested location of the ticket number using the `-` symbol on the line below. In this example line `9` does not exist yet on the commit message body. Lintje is suggesting to add this line with the example content, moving the ticket number from the subject to the message body.
 
 ```
-SubjectTicketNumber: The subject contains a ticket number
+Error[SubjectTicketNumber]: The subject contains a ticket number
   b38a8e5:1:10: Fix bug. Closes #123
     |
   1 | Fix bug. Closes #123
@@ -82,7 +82,7 @@ In the example above, line 1 and 9 may quite far apart, and there may be many li
 Lintje can also print hints, messages to help you not forget certain useful message content. These hints do not need to be resolved for Lintje to pass. Hints can also be disabled with the [`--no-hints` flag](/docs/usage#hints).
 
 ```
-MessageTicketNumber: The message body does not contain a ticket or issue number
+Hint[MessageTicketNumber]: The message body does not contain a ticket or issue number
   b38a8e5:10:1: Fix bug
      |
    8 | The last line of the commit message body.
