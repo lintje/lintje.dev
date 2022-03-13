@@ -13,6 +13,6 @@ If you need help, have any questions, feature requests or any feedback, please [
 
 ## Example Lintje output
 
-Lintje has descriptive output to helps you recognize issues more easily and know how to fix them.
+Lintje has [descriptive output](/docs/output) to helps you recognize issues more easily and know how to fix them.
 
 <%= partial "usage_example" %>
