@@ -86,5 +86,16 @@ tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
 
 - Certain characters like emoji are counted as multiple characters in this rule. Read more about [Unicode support][unicode].
 
+## MessageTicketNumber
+
+<%= version_label "0.7.0" %>
+
+The commit subject and message do not contain a reference to a ticket number. Link back to the relevant ticket/issue using the Git repository's hosting service in the commit message body.
+
+```
+Closes #123
+Related !123
+```
+
 [unicode]: /docs/rules/#unicode
 [NeedsRebase]: /docs/rules/commit-type/#needsrebase
