@@ -89,6 +89,7 @@ tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
 ## MessageTicketNumber
 
 <%= version_label "0.7.0" %>
+<%= label "ℹ️ Hint", "This hint does not need to be resolved for Lintje to approve of a commit" %>
 
 The commit subject and message do not contain a reference to a ticket number. Link back to the relevant ticket/issue using the Git repository's hosting service in the commit message body.
 
