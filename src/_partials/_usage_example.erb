@@ -1,4 +1,13 @@
 <pre class="highlight-custom"><code>$ lintje
+<span class="color-red">Error[SubjectTicketNumber]</span>: The subject contains a ticket number
+  883a427:1:10: Fix bug. Closes #123
+    |
+  1 | Fix bug. Closes #123
+    |          <span class="color-orange">^^^^^^^^^^^ Remove the ticket number from the subject</span>
+   ~~~
+  3 | Closes #123
+    | <span class="color-blue">----------- Move the ticket number to the message body</span>
+
 <span class="color-red">Error[SubjectCliche]</span>: The subject does not explain the change in much detail
   9a2ae29:1:1: Fix bug
     |
@@ -19,4 +28,4 @@
   | fix-123
   | <span class="color-orange">^^^^^^^ Remove the ticket number from the branch name or expand the branch name with more details</span>
 
-1 commit and branch inspected, <span class="color-red">3 issues detected</span></code></pre>
+2 commits and branch inspected, <span class="color-red">4 errors detected</span></code></pre>

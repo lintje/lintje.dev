@@ -42,6 +42,9 @@ pre:not(:last-child) {
 .highlight-custom .color-orange {
   color: var(--code-orange-color);
 }
+.highlight-custom .color-blue {
+  color: var(--code-blue-color);
+}
 
 /* Default pygments color scheme */
 .highlight .hll { background-color: #ffffcc }
