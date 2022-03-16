@@ -14,7 +14,7 @@ pre {
 }
 
 p code,
-li code {
+li > code {
   display: inline-block;
   color: var(--code-inline-color);
   padding: 0 4px;
