@@ -23,6 +23,7 @@ Error[SubjectPunctuation]: The subject ends with a punctuation character: `!`
 
 On the first line the rule name and its message are show.
 
+- `Error[...]`: The type of issue detected. Can be either `Error` or `Hint`.
 - `SubjectPunctuation`: The rule name that the issue is about.
 - `The subject ends with...`: The issue's message.
 
