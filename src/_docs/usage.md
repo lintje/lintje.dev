@@ -8,6 +8,8 @@ Lintje is a command line tool. After [installation] Lintje can be called with th
 
 It's recommended to add Lintje to the project Continuous Integration setup to lint the range of commits added by a Pull Request or push. See also the [automated review] for more usage examples.
 
+All CLI options and flags listed on this page can also be added to a [global options file](/docs/configuration).
+
 <%= toc %>
 
 ## Validating commits
