@@ -96,7 +96,10 @@ The commit subject and message do not contain a reference to a ticket number. Li
 ```
 Closes #123
 Related !123
+Part of #123
 ```
+
+The phrases "Part of" and "Related" were added in version 0.7.1.
 
 [unicode]: /docs/rules/#unicode
 [NeedsRebase]: /docs/rules/commit-type/#needsrebase
