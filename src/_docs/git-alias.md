@@ -11,7 +11,7 @@ Set up your alias with the following line.
 git config --global alias.lint '!lintje'
 ```
 
-You'll then be able to call it like the examples below and any other methods listed on the [usage page](/docs/usage).
+You'll then be able to call it like the examples below and any other methods listed on the [usage page](/docs/usage/).
 
 ```sh
 git lint

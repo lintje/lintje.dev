@@ -80,7 +80,7 @@ In the example above, line 1 and 9 may quite far apart, and there may be many li
 
 <%= version_label "0.7.0" %>
 
-Lintje can also print hints, messages to help you not forget certain useful message content. These hints do not need to be resolved for Lintje to pass. Hints can also be disabled with the [`--no-hints` flag](/docs/usage#hints).
+Lintje can also print hints, messages to help you not forget certain useful message content. These hints do not need to be resolved for Lintje to pass. Hints can also be disabled with the [`--no-hints` flag](/docs/usage/#hints).
 
 ```
 Hint[MessageTicketNumber]: The message body does not contain a ticket or issue number

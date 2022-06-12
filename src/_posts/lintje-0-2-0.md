@@ -26,4 +26,4 @@ More rules and more checks for existing rules were added.
 ---
 
 - <%= release_link "0.2.0" %>
-- View the <%= link_to "installation guide", "/docs/installation" %> for installation methods and ways to upgrade.
+- View the <%= link_to "installation guide", "/docs/installation/" %> for installation methods and ways to upgrade.

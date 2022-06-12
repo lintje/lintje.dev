@@ -16,11 +16,11 @@ Inspiration for Lintje's rules:
 - [Git is about communication](https://tomdebruijn.com/posts/git-is-about-communication/) by Tom de Bruijn.
 - [A Note About Git Commit Messages](https://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html) by Tim Pope.
 
-Read the [rules pages](/docs/rules) for all the rules Lintje checks and how to fix them.
+Read the [rules pages](/docs/rules/) for all the rules Lintje checks and how to fix them.
 
 ## Workflow
 
-Lintje does not enforce a particular workflow. Commits don't require a template. Commits don't need to be perfect on the first try, which is why I recommend [not exiting the commit process](/docs/git-hooks#validation-without-exiting-the-commit) when Lintje encounters an issue.
+Lintje does not enforce a particular workflow. Commits don't require a template. Commits don't need to be perfect on the first try, which is why I recommend [not exiting the commit process](/docs/git-hooks/#validation-without-exiting-the-commit) when Lintje encounters an issue.
 
 You can make [atomic commits](https://en.wikipedia.org/wiki/Atomic_commit) or you can make no commits. Make as many "WIP" commits as needed while you're fixing a bug or working on a feature.
 

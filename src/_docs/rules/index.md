@@ -11,12 +11,12 @@ _Lintje is primarily focussed on supporting the English language, other language
 
 ## Available rule types
 
-Read the rules pages for all the rules Lintje checks and how to fix them. For more information about why Lintje has these rules, please read the [philosophy page](/docs/philosophy).
+Read the rules pages for all the rules Lintje checks and how to fix them. For more information about why Lintje has these rules, please read the [philosophy page](/docs/philosophy/).
 
-- [Commit subject](/docs/rules/commit-subject)
-- [Commit message](/docs/rules/commit-message)
-- [Commit type](/docs/rules/commit-type)
-- [Branch](/docs/rules/branch)
+- [Commit subject](/docs/rules/commit-subject/)
+- [Commit message](/docs/rules/commit-message/)
+- [Commit type](/docs/rules/commit-type/)
+- [Branch](/docs/rules/branch/)
 
 <a name="unicode"></a>
 ## A note about Unicode display width

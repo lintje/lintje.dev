@@ -7,12 +7,12 @@ Welcome to Lintje! A Git linter made for people. Lintje will help you and your t
 
 This documentation section will get you started. Use the side bar on the left (or at the bottom of this page) to read more about Lintje.
 
-<%= link_to "Get started with Lintje", "/docs/introduction", :class => "button" %>
+<%= link_to "Get started with Lintje", "/docs/introduction/", :class => "button" %>
 
-If you need help, have any questions, feature requests or any feedback, please [contact me](/docs/support).
+If you need help, have any questions, feature requests or any feedback, please [contact me](/docs/support/).
 
 ## Example Lintje output
 
-Lintje has [descriptive output](/docs/output) to helps you recognize issues more easily and know how to fix them.
+Lintje has [descriptive output](/docs/output/) to helps you recognize issues more easily and know how to fix them.
 
 <%= partial "usage_example" %>

@@ -4,7 +4,7 @@ title: "Linux installation"
 
 <%= toc %>
 
-[Back to installation section](/docs/installation).
+[Back to installation section](/docs/installation/).
 
 ## Homebrew for Linux
 

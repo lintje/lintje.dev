@@ -30,4 +30,4 @@ Lintje now checks for empty commits in version 0.5.0! It also show less issues t
 ---
 
 - <%= release_link "0.5.0" %>
-- View the <%= link_to "installation guide", "/docs/installation" %> for installation methods and ways to upgrade.
+- View the <%= link_to "installation guide", "/docs/installation/" %> for installation methods and ways to upgrade.

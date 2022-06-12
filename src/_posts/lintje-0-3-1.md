@@ -24,4 +24,4 @@ Version 0.3.1 is out with better support for GitLab and less failures on differe
 ---
 
 - <%= release_link "0.3.1" %>
-- View the <%= link_to "installation guide", "/docs/installation" %> for installation methods and ways to upgrade.
+- View the <%= link_to "installation guide", "/docs/installation/" %> for installation methods and ways to upgrade.

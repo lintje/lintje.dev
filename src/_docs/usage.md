@@ -41,7 +41,7 @@ lintje main..develop
 
 <%= version_label "0.4.0" %>
 
-By default Lintje will validate the branch according to the [branch rules](/docs/rules/branch). This validation type can be disabled by calling lintje with the `--no-branch` flag.
+By default Lintje will validate the branch according to the [branch rules](/docs/rules/branch/). This validation type can be disabled by calling lintje with the `--no-branch` flag.
 
 ```sh
 # Run Lintje without branch validation
@@ -52,7 +52,7 @@ lintje --no-branch
 
 <%= version_label "0.1.0" %>
 
-To accommodate for the "commit-msg" Git hook, the `--hook-message-file` option allow you to configure where Lintje should read the commit message from. This is primarily used for the [Git hook setup](/docs/git-hooks).
+To accommodate for the "commit-msg" Git hook, the `--hook-message-file` option allow you to configure where Lintje should read the commit message from. This is primarily used for the [Git hook setup](/docs/git-hooks/).
 
 ```sh
 # Validate a specific commit message file
@@ -96,5 +96,5 @@ Lintje will exit with the following status codes in these situations:
 - `2` (Error) - An internal error occurred and the program had to exit. This is probably a bug, please report it in the [issue tracker][issues].
 
 [issues]: <%= site.metadata.issue_tracker %>
-[installation]: /docs/installation
+[installation]: /docs/installation/
 [automated review]: /docs/automated-review/

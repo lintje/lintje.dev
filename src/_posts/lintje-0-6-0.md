@@ -27,4 +27,4 @@ Also in this release: improved Unicode support 🚀
 ---
 
 - <%= release_link "0.6.0" %>
-- View the <%= link_to "installation guide", "/docs/installation" %> for installation methods and ways to upgrade.
+- View the <%= link_to "installation guide", "/docs/installation/" %> for installation methods and ways to upgrade.

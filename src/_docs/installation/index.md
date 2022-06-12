@@ -6,7 +6,7 @@ To use Lintje, it first needs to be installed on the systems you want to validat
 
 Lintje has a release per Operating System, make sure you Operating System of choice is supported: see the [list of installation targets](#supported-operating-systems).
 
-After you've installed Lintje, make sure to add [Git hooks](/docs/git-hooks) to your local project and/or add Lintje to the [Continuous Integration for your project](/docs/automated-review).
+After you've installed Lintje, make sure to add [Git hooks](/docs/git-hooks/) to your local project and/or add Lintje to the [Continuous Integration for your project](/docs/automated-review/).
 
 <%= toc %>
 
@@ -28,7 +28,7 @@ brew upgrade lintje
 
 ## Linux
 
-Please see the [Linux installation guide](/docs/installation/linux) for more information about different Linux distributions.
+Please see the [Linux installation guide](/docs/installation/linux/) for more information about different Linux distributions.
 
 ## Microsoft Windows
 

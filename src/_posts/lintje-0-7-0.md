@@ -52,4 +52,4 @@ description: "Errors now show suggestions on how to resolve some issues, new sug
 ---
 
 - <%= release_link "0.7.0" %>
-- View the <%= link_to "installation guide", "/docs/installation" %> for installation methods and ways to upgrade.
+- View the <%= link_to "installation guide", "/docs/installation/" %> for installation methods and ways to upgrade.

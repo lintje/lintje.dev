@@ -13,4 +13,4 @@ Tiny bug fix release for error handling when fetching Git config.
 ---
 
 - <%= release_link "0.4.1" %>
-- View the <%= link_to "installation guide", "/docs/installation" %> for installation methods and ways to upgrade.
+- View the <%= link_to "installation guide", "/docs/installation/" %> for installation methods and ways to upgrade.

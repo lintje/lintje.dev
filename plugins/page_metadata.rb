@@ -4,7 +4,7 @@ module PageMetadata
   def canonical_url_for(resource)
     return unless resource.destination
 
-    resource.destination.absolute_url.sub(/\/$/, "")
+    resource.destination.absolute_url
   end
 
   def canonical_url
