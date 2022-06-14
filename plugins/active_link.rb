@@ -1,18 +1,14 @@
 module ActiveLink
   def link_to_active(label, path, selector = nil)
-    classes = "active" if current_path?(selector || path)
-    link_to label, path, { :class => classes }
+    options = {}
+    options[:class] = "active" if current_path?(selector || path)
+    link_to label, path, options
   end
 
   def current_path
     return unless view.resource.destination
 
-    path = view.resource.destination.relative_url
-    if path.length > 1
-      path.sub(/\/$/, "")
-    else
-      path
-    end
+    view.resource.destination.relative_url
   end
 
   def current_path?(selector)
