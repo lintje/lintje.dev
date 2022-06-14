@@ -1,6 +1,6 @@
 ---
 title: "Philosophy"
-description: "Read more about Lintje's philosophy and why the rules are the way they are."
+description: "Lintje's philosophy is at the core of the project. It will improve your team's communication and make the project Git history useful to everyone."
 ---
 
 Lintje is written to promote communication between people within Git commits. Lintje wants you to write detailed commit subjects and messages. Your team reading these commits during reviews and debug sessions 2+ months from now will thank you.

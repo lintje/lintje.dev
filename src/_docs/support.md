@@ -1,6 +1,6 @@
 ---
 title: "Support"
-description: "Need help with Lintje? This is the place to ask for help."
+description: "Need help with Lintje? This is the place to ask for help. Use the issue tracker, start a new discussion or reach out on Twitter."
 ---
 
 Need help with Lintje? Found a bug or have a question?

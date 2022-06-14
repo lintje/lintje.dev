@@ -1,7 +1,8 @@
 ---
 layout: page
-full_title: About Lintje
-description: "Learn more about Lintje and the people behind the project."
+title: About Lintje
+full_title: More information about Lintje
+description: "Learn more about Lintje, the Git linter for people. More information about the people behind the project and project resources."
 ---
 
 Lintje is a linter for Git that can be used to validate commits and branches. These validations happen locally or on Continuous Integration systems.

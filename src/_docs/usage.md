@@ -1,6 +1,7 @@
 ---
-title: "Usage"
-description: "Learn more about how you can use Lintje and what options are available."
+title: "How to use Lintje"
+full_title: "How to use Lintje"
+description: "Lintje can be used in any Git project to validate commits and branches. Learn more about about how to use Lintje in your projects."
 ---
 
 Lintje is a command line tool. After [installation] Lintje can be called with the `lintje` command.

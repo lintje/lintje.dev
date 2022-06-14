@@ -2,7 +2,7 @@
 layout: post
 date: 2021-10-08
 title: "Lintje 0.4.0 released!"
-description: "Branch name validation is now in Lintje! Check out all the improvements in version 0.4."
+description: "Branch name validation is now available! Use better branch names to let your team know what the changes are about. This and more improvements in Lintje 0.4."
 ---
 
 Branch name validation is now in Lintje! Check out all the improvements in version 0.4.

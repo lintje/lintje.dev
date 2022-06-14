@@ -1,7 +1,7 @@
 ---
 layout: "page"
 title: "Code of Conduct"
-description: "The Code of Conduct is a set of rules for the project participants to follow."
+description: "The Code of Conduct is a set of rules for the project participants to follow. Read more how we make Lintje a friendly community."
 ---
 
 ## Our Pledge

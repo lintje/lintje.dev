@@ -1,6 +1,6 @@
 ---
 title: "Output format"
-description: "Read how Lintje's output works and how you can find the source of the issue faster."
+description: "Lintje outputs the issues it finds in a human friendly format. Learn more about this output and how you can find the source of the issue quickly."
 ---
 
 Whenever Lintje finds an issue it will print this to the terminal in human readable output.

@@ -1,5 +1,6 @@
 ---
 title: "Installation"
+description: "Install Lintje on your own system and make it part of your Continuous Integration workflow. Lint commits and branches."
 ---
 
 To use Lintje, it first needs to be installed on the systems you want to validate your commits. This can be both your local setup and the Continuous Integration build for the project.

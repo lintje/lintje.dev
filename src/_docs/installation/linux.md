@@ -1,5 +1,6 @@
 ---
 title: "Linux installation"
+description: "Follow these installation instructions for your Linux distribution of choice to use Lintje in your projects. Packages and Homebrew for Linux are available."
 ---
 
 <%= toc %>

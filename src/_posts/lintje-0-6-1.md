@@ -2,7 +2,7 @@
 layout: post
 title: "Lintje 0.6.1 released!"
 date: 2021-11-23
-description: "Lintje 0.6.1 is out 🚀 Lintje will print less warnings on commits that need to be rebased. Git hook support works better with the `--verbose` flag and the different cleanup modes are supported better."
+description: "Less warnings are printed for commits that need to be rebased. Git hook support works better with the `--verbose` flag and cleanup modes are supported better."
 ---
 
 Lintje 0.6.1 is out 🚀 Lintje will prints less warnings on commits that need to be rebased. Git hook support works better with the `--verbose` flag and the different cleanup modes are supported better.

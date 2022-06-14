@@ -2,7 +2,7 @@
 layout: post
 date: 2021-07-11
 title: "Lintje 0.2.0 released!"
-description: "More rules and more checks for existing rules were added."
+description: "Lintje 0.2.0 adds more rules for the commit message body and improves the existing commit subject rules to cath more formatting issues."
 ---
 
 More rules and more checks for existing rules were added.

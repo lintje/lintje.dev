@@ -2,7 +2,7 @@
 layout: post
 date: 2021-10-08
 title: "Lintje 0.4.1 released!"
-description: "Tiny bug fix release for error handling when fetching Git config."
+description: "This release of Lintje contains a tiny bug fix release for error handling when fetching Git config that is customized."
 ---
 
 Tiny bug fix release for error handling when fetching Git config.

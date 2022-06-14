@@ -1,5 +1,6 @@
 ---
 title: "Getting started"
+description: "Get started with using Lintje as the Git Linter in your projects. Improve your team's communication in Git and make your project's Git history finally useful."
 ---
 
 ## Installing Lintje

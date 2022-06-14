@@ -2,7 +2,7 @@
 layout: post
 date: 2021-07-12
 title: "Lintje 0.3.0 released!"
-description: "More rules for commit subjects."
+description: "Lintje 0.3.0 adds more rules to validate commit subjects. It caches more cliches, disallows prefixes and build tags in the subject."
 ---
 
 More rules for commit subjects.

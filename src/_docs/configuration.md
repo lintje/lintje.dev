@@ -1,6 +1,6 @@
 ---
 title: "Configuration"
-description: "Learn more about how to configure Lintje for each commit Lintje validates."
+description: "Lintje is config free by design, but can be customized per commit. Learn more about how to configure Lintje for each commit it validates."
 ---
 
 Lintje does not have a configuration file where you can enable/disable/configure certain rules for an entire project.
