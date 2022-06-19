@@ -88,6 +88,17 @@ lintje --color
 lintje --no-color
 ```
 
+Colorized output can also be disabled with the [`NO_COLOR` environment variable](https://no-color.org/).
+
+```sh
+# Per command
+NO_COLOR=true lintje
+
+# Or set globally
+export NO_COLOR=true
+lintje
+```
+
 ## Exit codes
 
 Lintje will exit with the following status codes in these situations:
