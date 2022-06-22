@@ -29,8 +29,13 @@
   list-style: none;
 }
 
+.docs-navigation ul ul {
+  margin-left: calc(var(--spacing-small));
+  margin-bottom: 0;
+}
+
 .docs-navigation a {
-  display: block;
+  display: inline-block;
   padding: 2px 10px;
   border-radius: var(--border-radius-tiny);
 }
