@@ -3,6 +3,8 @@ title: "Getting started"
 description: "Get started with using Lintje as the Git Linter in your projects. Improve your team's communication in Git and make your project's Git history finally useful."
 ---
 
+<%= toc %>
+
 ## Installing Lintje
 
 To use Lintje, you must first [install it](/docs/installation/). This can be done with a variety of package manager or by manually downloading and installing Lintje.
@@ -29,6 +31,6 @@ Want to know more why Lintje's rules are the way they are? In the [philosophy se
 
 After trying out Lintje and deciding to continue using it, consider adding it to your [Continuous Integration set up](/docs/automated-review/). By adding this automated check, you can be sure everyone on the team is following the same rules and writes better commits.
 
-## Need help? Questions?
+## Need help or have questions?
 
 If you need any help getting started with Lintje, please check out the [support page](/docs/support/) for the best way to reach me.
