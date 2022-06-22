@@ -2,6 +2,8 @@ module ActiveLink
   def link_to_active(label, path, selector = nil)
     options = {}
     options[:class] = "active" if current_path?(selector || path)
+    # Only on full match mark it as active
+    options["aria-current"] = "page" if current_path?(path)
     link_to label, path, options
   end
 
