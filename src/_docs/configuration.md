@@ -7,6 +7,8 @@ Lintje does not have a configuration file where you can enable/disable/configure
 
 Instead it's possible to [ignore specific rules per commit](#ignoring-rules-per-commit).
 
+There are separate flags available on the CLI to [control branch validation](/docs/usage/#branch-validation), [hide hints](/docs/usage/#hints), [control colorized output](/docs/usage/#colorized-output) and [select which commits to validate](/docs/usage/#validating-commits).
+
 ## Ignoring rules per commit
 
 It's possible to ignore certain rules for a commit, but it's recommended to use this very infrequently. If you think Lintje should handle a certain scenario better, please [create an issue][issues] explaining your use case.
