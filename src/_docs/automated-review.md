@@ -29,7 +29,7 @@ $ lintje 5c84719708b9b649b9ef3b56af214f38cee6acde...92d87d5c0dd2dbb7a68ecb27df43
 
 Read more about [$SEMAPHORE_GIT_COMMIT_RANGE](https://docs.semaphoreci.com/ci-cd-environment/environment-variables/#semaphore_git_commit_range) in the Semaphore docs.
 
-### Semaphore helper script
+#### Semaphore helper script
 
 Use the following script, in a location like `script/lint_git`, in your project to download, install Lintje and cache for future builds. Change the version number in the `LINTJE_VERSION` variable to update Lintje to a newer version.
 
