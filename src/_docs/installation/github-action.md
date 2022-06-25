@@ -10,6 +10,8 @@ Lintje is available as a GitHub Action which can be used in GitHub actions workf
 
 For more information on how to use the Lintje GitHub Action, please see the [Lintje GitHub Action README](https://github.com/tombruijn/lintje-action#readme).
 
+[Back to installation section](/docs/installation/).
+
 ## Example GitHub workflow using Lintje
 
 ```yaml
