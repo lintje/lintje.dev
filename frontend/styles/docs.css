@@ -30,8 +30,12 @@
 }
 
 .docs-navigation ul ul {
-  margin-left: calc(var(--spacing-small));
+  margin-left: calc(var(--spacing-small) * 1.5);
   margin-bottom: 0;
+}
+
+.docs-navigation ul ul li {
+  list-style: disc;
 }
 
 .docs-navigation a {
