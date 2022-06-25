@@ -8,7 +8,7 @@ Lintje is available as a GitHub Action which can be used in GitHub actions workf
 
 - [Lintje on the GitHub marketplace](https://github.com/marketplace/actions/lintje)
 
-For more information on how to use the Lintje GitHub Action, please see the [Lintje GitHub Action README](https://github.com/tombruijn/lintje-action#readme).
+For more information on how to use the Lintje GitHub Action, please see the [Lintje GitHub Action README](https://github.com/lintje/action#readme).
 
 [Back to installation section](/docs/installation/).
 
@@ -26,5 +26,5 @@ jobs:
       - uses: actions/checkout@v2
         with:
           fetch-depth: 0 # Fetch depth is required
-      - uses: tombruijn/lintje-action@v<%= latest_version %>
+      - uses: lintje/action@v<%= latest_version %>
 ```
