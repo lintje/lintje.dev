@@ -7,6 +7,10 @@ This page contains examples of how to use Lintje in different scenarios and setu
 
 ## Continuous integration
 
+### GitHub Action
+
+Lintje is available as a GitHub Action on the [GitHub marketplace](https://github.com/marketplace/actions/lintje).
+
 ### Semaphore
 
 [Semaphore](https://semaphoreci.com/) has an environment variables that contains the range of commits that were pushed for a given workflow. This tests all the commits that are included in a Pull Request or Git push on a branch.

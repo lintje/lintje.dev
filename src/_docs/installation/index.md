@@ -14,6 +14,7 @@ After you've installed Lintje, make sure to add [Git hooks](/docs/git-hooks/) to
 - Recommended installation methods
   - [Linux Homebrew and packages](/docs/installation/linux/)
   - [macOS Homebrew](/docs/installation/macos/)
+  - [GitHub Action](/docs/installation/github-action/)
   - [Docker image](/docs/installation/docker-image/)
   - [Rust Cargo install](/docs/installation/rust-cargo-install/)
 - [Manual installation](#manual-installation)
