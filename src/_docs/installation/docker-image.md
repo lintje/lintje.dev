@@ -1,5 +1,6 @@
 ---
 title: "Docker image"
+description: "Lintje ships in a Docker container to make it easier to add it to your existing infrastructure and Continuous Integration workflow."
 ---
 
 <%= version_label "0.7.1" %>

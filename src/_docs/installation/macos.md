@@ -1,5 +1,6 @@
 ---
-title: "macOS"
+title: "macOS installation"
+description: "Install Lintje on macOS using the Homebrew tap for Lintje. Installing Lintje is a two step process done in a minute."
 ---
 
 <%= toc %>

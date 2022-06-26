@@ -1,5 +1,6 @@
 ---
 title: "GitHub Action"
+description: "Validate Git history using the Lintje GitHub Action. Add Lintje to your GitHub Action workflow to validate commits on every push."
 ---
 
 <%= version_label "0.7.1" %>
