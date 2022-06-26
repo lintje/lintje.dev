@@ -26,5 +26,5 @@ jobs:
       - uses: actions/checkout@v2
         with:
           fetch-depth: 0 # Fetch depth is required
-      - uses: lintje/action@v<%= latest_version %>
+      - uses: lintje/action@v<%= latest_minor_version %>
 ```

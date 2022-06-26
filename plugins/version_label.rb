@@ -3,6 +3,12 @@ module VersionLabel
     site.metadata.latest_version
   end
 
+  def latest_minor_version
+    version = Gem::Version.new(site.metadata.latest_version)
+    major, minor = version.canonical_segments
+    "#{major}.#{minor}"
+  end
+
   def label(message, title)
     raw(<<~HTML)
       <div class="label" title="#{title}">#{message}</div>
