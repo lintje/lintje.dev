@@ -8,7 +8,7 @@ description: "Lintje is now available in a small Docker image for easier portabi
 ## Added
 
 - Docker image: Lintje ships in a Docker image now available on Docker Hub. See the [Docker image installation instructions](/docs/installation/docker-image/) for more information.
-- Check commit messages for "Part of #123" substring for [MessageTicketNumber hint](/docs/rules/commit-message#messageticketnumber). This is also accepted along with "Fixes #123" and "Closes #123".
+- Check commit messages for "Part of #123" substring for [MessageTicketNumber hint](/docs/rules/commit-message/#messageticketnumber). This is also accepted along with "Fixes #123" and "Closes #123".
 
 ## Changed
 
