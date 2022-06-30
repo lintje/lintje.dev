@@ -9,6 +9,7 @@ The rules listed on this page are about the Git commit subject. The subject is t
 
 ## SubjectLength
 
+<%= error_label %>
 <%= version_label "0.1.0" %>
 
 The commit's subject is considered too short or too long.
@@ -37,6 +38,7 @@ One day I woke up and found the solution to this year old bug, the solution...
 
 ## SubjectMood
 
+<%= error_label %>
 <%= version_label "0.1.0" %>
 
 Write commit subjects in the [imperative mood]. The commit is not actively "fixing" an issue, but it is a "fix" for an issue or it does "add" a feature.
@@ -79,6 +81,7 @@ You are of course free to start the subject with any other words than are listed
 
 ## SubjectWhitespace
 
+<%= error_label %>
 <%= version_label "0.1.0" %>
 
 The commit's subject starts with a whitespace (space, tab, etc). Remove this leading whitespace from the subject.
@@ -95,6 +98,7 @@ Fix incorrect email validation
 
 ## SubjectCapitalization
 
+<%= error_label %>
 <%= version_label "0.1.0" %>
 
 The commit's subject doesn't start with a capital letter. Use a capital letter to start the subject.
@@ -113,6 +117,7 @@ fix incorrect email validation
 
 ## SubjectPunctuation
 
+<%= error_label %>
 <%= version_label "0.1.0" %>
 
 The commit's subject starts or ends with punctuation. Subjects don't need to end with punctuation.
@@ -139,6 +144,7 @@ Sometimes commits contain some tag for some machine to parse, like `[ci skip]` o
 
 ## SubjectTicketNumber
 
+<%= error_label %>
 <%= version_label "0.1.0" %>
 
 The commit's subject includes a reference to a ticket or issue. Move this to the message body.
@@ -157,6 +163,7 @@ Fix JIRA-123 for good
 
 ## SubjectPrefix
 
+<%= error_label %>
 <%= version_label "0.3.0" %>
 
 The commit's subject contains a prefix of some kind. Remove prefixes from the commit subject and reword the subject to explain the change in more detail.
@@ -183,6 +190,7 @@ fix(scope)!: ...
 
 ## SubjectBuildTag
 
+<%= error_label %>
 <%= version_label "0.3.0" %>
 
 The commit's subject contains a "skip ci" build tag. This should be moved to the message body. The skip Continuous Integration tag doesn't tell anything about what kind of change was made. It's metadata only for the Continuous Integration system.
@@ -226,6 +234,7 @@ Update README [skip travisci]
 
 ## SubjectCliche
 
+<%= error_label %>
 <%= version_label "0.1.0" %>
 
 The commit's subject is considered to be a cliché, it's overused and adds little meaning. This rule scans for subjects that only use two words to describe a change, usually "fix bug" and "update code" types of subjects. The words in the example below are the words it scans for.

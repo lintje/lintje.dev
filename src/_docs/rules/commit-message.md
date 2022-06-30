@@ -11,6 +11,7 @@ Good commit messages explain what the problem was that was solved, why the chang
 
 ## MessageEmptyFirstLine
 
+<%= error_label %>
 <%= version_label "0.2.0" %>
 
 The line in the commit message body after the subject is not empty. If the line after the subject is not empty, it is considered part of the subject.
@@ -25,6 +26,7 @@ First message line below an empty line.
 
 ## MessagePresence
 
+<%= error_label %>
 <%= version_label "0.1.0" %>
 
 The commit's message body is empty or too short. Add a message body to the commit to elaborate on _why_ the change was necessary, what alternatives were considered and why this particular implementation was chosen as a solution.
@@ -35,6 +37,7 @@ The commit's message body is empty or too short. Add a message body to the commi
 
 ## MessageLineLength
 
+<%= error_label %>
 <%= version_label "0.1.0" %>
 
 The commit's message body has one or more lines that are too long. The maximum line length in a message body is 72 characters. Split sentences and paragraph across multiples lines.
@@ -88,8 +91,8 @@ tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
 
 ## MessageTicketNumber
 
+<%= hint_label %>
 <%= version_label "0.7.0" %>
-<%= label "ℹ️ Hint", "This hint does not need to be resolved for Lintje to approve of a commit" %>
 
 The commit subject and message do not contain a reference to a ticket number. Link back to the relevant ticket/issue using the Git repository's hosting service in the commit message body.
 

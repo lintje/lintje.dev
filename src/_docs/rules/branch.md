@@ -9,6 +9,7 @@ The rules listed on this page are about the Git branch on which commits are made
 
 ## BranchNameLength
 
+<%= error_label %>
 <%= version_label "0.4.0" %>
 
 The branch name is detected as too short. A branch name needs to be at least four characters.
@@ -29,6 +30,7 @@ bug
 
 ## BranchNameTicketNumber
 
+<%= error_label %>
 <%= version_label "0.4.0" %>
 
 The branch name is detected to only contain a ticket number or a prefix and ticket number. Ticket numbers alone don't communicate much, especially if all branches are formatted this way. Describe the branch in more detail, in a couple words, to explain what the change is about. Ticket numbers are accepted, but not as the only thing in the branch name.
@@ -59,6 +61,7 @@ JIRA-123
 
 ## BranchNamePunctuation
 
+<%= error_label %>
 <%= version_label "0.4.0" %>
 
 The branch name starts or ends with punctuation. Branch names should not use punctuation this way.
@@ -84,6 +87,7 @@ _fix-bug
 
 ## BranchNameCliche
 
+<%= error_label %>
 <%= version_label "0.4.0" %>
 
 The branch name is considered to be a cliché, it's overused and adds little meaning. This rule scans for branch names that only use two words to describe a change, usually "fix-bug" and "add_test" types of branch names. The words in the example below are the words it scans for.

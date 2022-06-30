@@ -9,6 +9,7 @@ The rules listed on this page are about the nature of the Git commit. These comm
 
 ## DiffPresence
 
+<%= error_label %>
 <%= version_label "0.5.0" %>
 
 The commit is detected as having no file changes, it's an empty commit. Avoid empty commits in the Git history. Empty commits can be left over after a rebase after all its changes have been applied already in another commit.
@@ -17,6 +18,7 @@ Add the intended files changes to the empty commit, or remove the commit from th
 
 ## MergeCommit
 
+<%= error_label %>
 <%= version_label "0.1.0" %>
 
 The commit is detected as a merge commit, which is a commit merging one branch into another. Prefer rebasing feature branches instead of merging base branches back into them. These commits don't communicate anything meaningful other than when a person merged changes locally.
@@ -58,6 +60,7 @@ Merge commits made when merging Pull and Merge requests will not fail on this ru
 
 ## NeedsRebase
 
+<%= error_label %>
 <%= version_label "0.1.0" %>
 
 The commit is detected as a fixup or squash commit. These commits communicate the intent to squash them into other commits during the next rebase. These commits should not be send in for review in Pull Requests, and they should not be merged into main branches.

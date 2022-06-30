@@ -22,7 +22,7 @@ module VersionLabel
       if latest_verison_object >= release_version_object
         [
           "Version #{version}",
-          "This feature was added in version #{version}."
+          "This feature was added in Lintje version #{version}."
         ]
       else
         [
@@ -31,6 +31,20 @@ module VersionLabel
         ]
       end
     label(message, title)
+  end
+
+  def error_label(title = nil)
+    label(
+      %(<span aria-hidden="true">⚠️ </span>Error),
+      title || "This error needs to be resolved for Lintje to approve the commit"
+    )
+  end
+
+  def hint_label(title = nil)
+    label(
+      %(<span aria-hidden="true">ℹ️ </span>Hint),
+      title || "This hint does not need to be resolved for Lintje to approve the commit"
+    )
   end
 end
 
