@@ -23,9 +23,9 @@ Error[SubjectPunctuation]: The subject ends with a punctuation character: `!`
 
 On the first line the rule name and its message are show.
 
-- `Error[...]`: The type of issue detected. Can be either `Error` or `Hint`.
-- `SubjectPunctuation`: The rule name that the issue is about.
-- `The subject ends with...`: The issue's message.
+- `Error[...]`: The type of issue detected. Can be either `Error` or `Hint`. Errors will cause Lintje to exit with a failure, but hints will not.
+- `SubjectPunctuation`: The rule name that the issue is about. These rule names can be used to look up more information in the [rules section](/docs/rules/)
+- `The subject ends with...`: The issue's message explaining in short what the problem is that Lintje found.
 
 ## Location
 
@@ -35,19 +35,19 @@ On the second line of of the printed output the location of source of the issue 
 f9952f7:1:8: Fix bug!
 ```
 
-In the example above the location data is separated by colon (`:`) symbols. Each of these values mean the following:
+In the example above the location data is separated by colon symbols (`:`). Each of these values mean the following:
 
 - `f9952f7`: The commit SHA of the commit in which the issue was found.
     - For branch issues this value is instead shown as `Branch`.
 - `1`: The line in the commit's message (including the subject line) on which the issue was found.
     - This value is not present for issues concerning branches.
-    - This value is not present for issues concerning the commit contents.
+    - This value is not present for issues concerning the file changes in the commit.
 - `8`: The column of the line on the issue was found.
-    - This value is not present for issues concerning the commit contents.
+    - This value is not present for issues concerning the file changes in the commit.
 
 ## Errors
 
-In the example below a commit's subject contains a ticket number. The issue output highlights the ticket number in the subject with the `^` symbols on the line below. The message behind those symbols suggests a course of action to the reader.
+In the example below a commit's subject contains a ticket number. The issue output highlights the ticket number in the subject with the caret symbols (`^`) on the line below. The message behind those symbols suggests a course of action to the reader. The number before the pipe symbol (`|`) matches the line number of the commit message (including the subject line) on which the problem was found.
 
 ```
 Error[SubjectTicketNumber]: The subject contains a ticket number
@@ -61,7 +61,7 @@ Error[SubjectTicketNumber]: The subject contains a ticket number
 
 <%= version_label "0.7.0" %>
 
-For errors, Lintje may make a suggestion on how to resolve the issue. It will also print the new suggested location of the ticket number using the `-` symbol on the line below. In this example line `9` does not exist yet on the commit message body. Lintje is suggesting to add this line with the example content, moving the ticket number from the subject to the message body.
+For errors, Lintje may make a suggestion on how to resolve the issue. It will also print the new suggested location of the ticket number using the dash symbol (`-`) on the line below. In this example line `9` does not exist yet on the commit message body. Lintje is suggesting to add this line with the example content, moving the ticket number from the subject to the message body.
 
 ```
 Error[SubjectTicketNumber]: The subject contains a ticket number
@@ -74,7 +74,7 @@ Error[SubjectTicketNumber]: The subject contains a ticket number
     | ----------- Move the ticket number to the message body
 ```
 
-In the example above, line 1 and 9 may quite far apart, and there may be many lines of content between them which will cause a distraction. For this reason the content is hidden. This hidden content is indicated with the `~~~` symbols.
+In the example above, line 1 and 9 may quite far apart, and there may be many lines of content between them which will cause a distraction. For this reason the content is hidden. This hidden content is indicated with the three tilde symbols (`~~~`).
 
 ## Hints
 
@@ -92,4 +92,4 @@ Hint[MessageTicketNumber]: The message body does not contain a ticket or issue n
      | ---------- Consider adding a reference to a ticket or issue
 ```
 
-Like with suggestions for errors, hints indicate the suggested changes with the `-` symbol.
+Like with suggestions for errors, hints indicate the suggested changes with the dash symbol (`-`).
