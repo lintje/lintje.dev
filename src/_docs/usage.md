@@ -72,7 +72,7 @@ To run Lintje without printing hints, use the `--no-hints` flag.
 lintje --no-hints
 ```
 
-Read more about how [Lintje outputs hints in the terminal](/docs/output.html#hints).
+Read more about how [Lintje outputs hints in the terminal](/docs/output/#hints).
 
 ## Colorized output
 
