@@ -5,8 +5,9 @@ layout: page
 title: "Page not found"
 ---
 
-<p><strong>Page not found :(</strong></p>
-<p>The requested page could not be found.</p>
+<p>The requested page could not be found. It may have been moved or the URL doesn't match any known page.</p>
+
+<p>Go back to <a href="/">the homepage</a>.</p>
 
 <% if Bridgetown.env.production? %>
 <script><%= raw plausible_404_script %></script>
