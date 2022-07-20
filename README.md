@@ -1,6 +1,6 @@
 # Lintje.dev
 
-Website for [Lintje](https://github.com/tombruijn/lintje).
+Website for [Lintje](https://lintje.dev).
 
 This website is made using Bridgetown. Consult the [Bridgetown
 documentation](https://www.bridgetownrb.com/docs/) for more information.
