@@ -7,17 +7,17 @@
   text-decoration: none;
   background-color: var(--highlight-color);
   border-radius: var(--border-radius-tiny);
-}
 
-.button:hover {
-  background-color: #3F009F;
-  box-shadow: 0 5px 15px -10px rgba(31, 18, 53, 0.6);
+  &:hover {
+    background-color: #3F009F;
+    box-shadow: 0 5px 15px -10px rgba(31, 18, 53, 0.6);
+  }
 }
 
 .button-secondary {
   background-color: var(--tertiary-dark-color);
-}
 
-.button-secondary:hover {
-  background-color: #842b61;
+  &:hover {
+    background-color: #842b61;
+  }
 }

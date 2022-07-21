@@ -97,7 +97,7 @@
   font-size: 0.8em;
 }
 
-@media (--mobile-breakpoint) {
+@media ($mobile-breakpoint) {
   .home-page {
     font-size: 1.1em;
   }

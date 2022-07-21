@@ -1,4 +1,5 @@
 @custom-media --mobile-breakpoint (max-width: 750px);
+$mobile-breakpoint: "max-width: 750px";
 
 :root {
   --body-color: #2b2c34;
@@ -119,54 +120,39 @@ h4 {
   font-weight: bold;
   line-height: 1;
   word-break: break-word;
-}
 
-h1 a,
-h2 a,
-h3 a,
-h4 a {
-  display: inline-block;
-}
+  a {
+    display: inline-block;
+  }
 
-h1 a[href^="#"],
-h2 a[href^="#"],
-h3 a[href^="#"],
-h4 a[href^="#"] {
-  color: inherit;
-  text-decoration: none;
-}
+  a[href^="#"] {
+    color: inherit;
+    text-decoration: none;
+  }
 
-h1 span,
-h2 span,
-h3 span,
-h4 span {
-  position: absolute;
-  bottom: 5px;
-  left: -25px;
-  padding-right: 25px;
+  span {
+    position: absolute;
+    bottom: 5px;
+    left: -25px;
+    padding-right: 25px;
 
-  color: var(--highlight-color);
-  font-size: 0.7em;
-  text-align: right;
-  text-decoration: underline;
-  text-decoration-color: var(--tertiary-color);
+    color: var(--highlight-color);
+    font-size: 0.7em;
+    text-align: right;
+    text-decoration: underline;
+    text-decoration-color: var(--tertiary-color);
 
-  opacity: 0;
-  transition: opacity .3s;
-}
+    opacity: 0;
+    transition: opacity .3s;
 
-h1 span:before,
-h2 span:before,
-h3 span:before,
-h4 span:before {
-  content: "#"
-}
+    &:before {
+      content: "#"
+    }
+  }
 
-h1 a:hover span,
-h2 a:hover span,
-h3 a:hover span,
-h4 a:hover span {
-  opacity: 1;
+  a:hover span {
+    opacity: 1;
+  }
 }
 
 h1 {
@@ -175,18 +161,15 @@ h1 {
   font-size: 3.5rem;
 }
 
-@media (--mobile-breakpoint) {
+@media ($mobile-breakpoint) {
   h1 {
     margin-bottom: 10px;
     font-size: 3rem;
-  }
 
-  h1 span,
-  h2 span,
-  h3 span,
-  h4 span {
-    left: -18px;
-    font-size: 0.5em;
+    span {
+      left: -18px;
+      font-size: 0.5em;
+    }
   }
 }
 

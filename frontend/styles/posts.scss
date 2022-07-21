@@ -2,6 +2,7 @@
   display: block;
   margin-bottom: 20px;
   font-size: 1.0rem;
+  text-align: center;
 }
 
 .post-item:not(:last-child) {
@@ -12,8 +13,4 @@
   display: block;
   margin-bottom: 5px;
   font-size: 1.0rem;
-}
-
-.layout-post time {
-  text-align: center;
 }

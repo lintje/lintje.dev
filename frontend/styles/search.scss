@@ -3,23 +3,23 @@ bridgetown-search-form {
   position: relative;
   margin-top: 5px;
   justify-content: flex-end;
-}
 
-bridgetown-search-form input {
-  padding: 3px 10px;
-  font-size: 110%;
-  border: 1px solid #EEE;
-  border-radius: var(--border-radius);
+  input {
+    padding: 3px 10px;
+    font-size: 110%;
+    border: 1px solid #EEE;
+    border-radius: var(--border-radius);
 
-  -webkit-appearance: none;
-  -ms-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  outline: none;
-}
+    -webkit-appearance: none;
+    -ms-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+  }
 
-bridgetown-search-form input:focus {
-  border-color: var(--tertiary-color);
+  input:focus {
+    border-color: var(--tertiary-color);
+  }
 }
 
 bridgetown-search-results {
@@ -30,24 +30,24 @@ bridgetown-search-results {
   top: 40px;
   font-size: 110%;
   text-align: left;
+
+  h1 {
+    color: var(--highlight-color);
+    text-decoration: underline;
+  }
 }
 
-bridgetown-search-results h1 {
-  color: var(--highlight-color);
-  text-decoration: underline;
-}
-
-@media (--mobile-breakpoint) {
+@media ($mobile-breakpoint) {
   bridgetown-search-form {
     display: block;
     margin: var(--spacing-small) 0;
     padding: 0 var(--spacing-small);
     width: 100%;
     max-width: 100%;
-  }
 
-  bridgetown-search-form input {
-    width: calc(100% - var(--spacing-small));
+    input {
+      width: calc(100% - var(--spacing-small));
+    }
   }
 
   bridgetown-search-results {
