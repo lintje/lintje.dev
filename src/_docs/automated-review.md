@@ -41,9 +41,9 @@ set -eu
 
 LINTJE_VERSION="<%= site.metadata.latest_version %>"
 
-mkdir -p $HOME/bin
-cache_key=v1-lintje-$LINTJE_VERSION
-cache restore $cache_key
+mkdir -p "$HOME/bin"
+cache_key="v1-lintje-$LINTJE_VERSION"
+cache restore "$cache_key"
 
 # File exists and is executable
 if [ -x "$HOME/bin/lintje" ]; then
@@ -51,10 +51,10 @@ if [ -x "$HOME/bin/lintje" ]; then
 else
   echo "Downloading Lintje $LINTJE_VERSION"
   curl -L \
-    https://github.com/tombruijn/lintje/releases/download/v$LINTJE_VERSION/x86_64-unknown-linux-gnu.tar.gz | \
-    tar -xz --directory $HOME/bin
-  cache store $cache_key $HOME/bin/lintje
+    "https://github.com/tombruijn/lintje/releases/download/v$LINTJE_VERSION/x86_64-unknown-linux-gnu.tar.gz" | \
+    tar -xz --directory "$HOME/bin"
+  cache store "$cache_key" "$HOME/bin/lintje"
 fi
 
-$HOME/bin/lintje $SEMAPHORE_GIT_COMMIT_RANGE
+"$HOME/bin/lintje" "$SEMAPHORE_GIT_COMMIT_RANGE"
 ```
