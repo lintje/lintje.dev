@@ -62,7 +62,7 @@ Error[SubjectTicketNumber]: The subject contains a ticket number
 
 <%= version_label "0.7.0" %>
 
-For errors, Lintje may make a suggestion on how to resolve the issue. It will also print the new suggested location of the ticket number using the dash symbol (`-`) on the line below. In this example line `9` does not exist yet on the commit message body. Lintje is suggesting to add this line with the example content, moving the ticket number from the subject to the message body.
+For errors, Lintje may make a suggestion on how to resolve the issue. It will also print the new suggested location of the ticket number using the plus symbol¹ (`+`) on the line below. In this example line `9` does not exist yet on the commit message body. Lintje is suggesting to add this line with the example content, moving the ticket number from the subject to the message body.
 
 ```
 Error[SubjectTicketNumber]: The subject contains a ticket number
@@ -72,10 +72,12 @@ Error[SubjectTicketNumber]: The subject contains a ticket number
     |          ^^^^^^^^^^^ Remove the ticket number from the subject
    ~~~
   9 | Closes #123
-    | ----------- Move the ticket number to the message body
+    | +++++++++++ Move the ticket number to the message body
 ```
 
 In the example above, line 1 and 9 may quite far apart, and there may be many lines of content between them which will cause a distraction. For this reason the content is hidden. This hidden content is indicated with the three tilde symbols (`~~~`).
+
+- ¹: The suggestion symbol was changed from the dash symbol to the plus symbol in version 0.8.0.
 
 ## Hints
 
@@ -90,7 +92,7 @@ Hint[MessageTicketNumber]: The message body does not contain a ticket or issue n
    8 | The last line of the commit message body.
    9 |
   10 | Fixes #123
-     | ---------- Consider adding a reference to a ticket or issue
+     | ++++++++++ Consider adding a reference to a ticket or issue
 ```
 
-Like with suggestions for errors, hints indicate the suggested changes with the dash symbol (`-`).
+Like with suggestions for errors, hints indicate the suggested changes with the plus symbol (`+`).
