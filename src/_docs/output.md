@@ -38,6 +38,7 @@ f9952f7:1:8: Fix bug!
 In the example above the location data is separated by colon symbols (`:`). Each of these values mean the following:
 
 - `f9952f7`: The commit SHA of the commit in which the issue was found.
+    - When using the [`--hook-message-file` option](/docs/usage/#commit-message-file-validation) for the Git commit hook, this is shown as `0000000` because the commit doesn't exist yet.
     - For branch issues this value is instead shown as `Branch`.
 - `1`: The line in the commit's message (including the subject line) on which the issue was found.
     - This value is not present for issues concerning branches.
