@@ -7,12 +7,16 @@
    ~~~
   3 | Closes #123
     | <span class="color-blue">----------- Move the ticket number to the message body</span>
+    |
+    = help: https://lintje.dev/docs/rules/commit-subject/#subjectticketnumber
 
 <span class="color-red">Error[SubjectCliche]</span>: The subject does not explain the change in much detail
   9a2ae29:1:1: Fix bug
     |
   1 | Fix bug
     | <span class="color-orange">^^^^^^^ Describe the change in more detail</span>
+    |
+    = help: https://lintje.dev/docs/rules/commit-subject/#subjectcliche
 
 <span class="color-red">Error[MessagePresence]</span>: No message body was found
   9a2ae29:3:1: Fix bug
@@ -21,11 +25,15 @@
   2 |
   3 |
     | <span class="color-orange">^ Add a message body with context about the change and why it was made</span>
+    |
+    = help: https://lintje.dev/docs/rules/commit-message/#messagepresence
 
 <span class="color-red">Error[BranchNameTicketNumber]</span>: A ticket number was detected in the branch name
   Branch:1: fix-123
   |
   | fix-123
   | <span class="color-orange">^^^^^^^ Remove the ticket number from the branch name or expand the branch name with more details</span>
+  |
+  = help: https://lintje.dev/docs/rules/branch/#branchnameticketnumber
 
 2 commits and branch inspected, <span class="color-red">4 errors detected</span></code></pre>

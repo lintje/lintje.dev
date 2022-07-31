@@ -19,12 +19,14 @@ Error[SubjectPunctuation]: The subject ends with a punctuation character: `!`
     |
   1 | Fix bug!
     |        ^ Remove punctuation from the end of the subject
+    |
+    = help: https://lintje.dev/docs/rules/commit-subject/#subjectpunctuation
 ```
 
 On the first line the rule name and its message are show.
 
 - `Error[...]`: The type of issue detected. Can be either `Error` or `Hint`. Errors will cause Lintje to exit with a failure, but hints will not.
-- `SubjectPunctuation`: The rule name that the issue is about. These rule names can be used to look up more information in the [rules section](/docs/rules/)
+- `SubjectPunctuation`: The rule name that the issue is about. These rule names can be used to look up more information in the [rules section](/docs/rules/).
 - `The subject ends with...`: The issue's message explaining in short what the problem is that Lintje found.
 
 ## Location
