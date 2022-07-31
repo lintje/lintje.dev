@@ -58,14 +58,20 @@ Merge commits that merge local branches/tags into the repository's branches do n
 
 Merge commits made when merging Pull and Merge requests will not fail on this rule, these commits are ignored entirely. These commits communicate when a Pull/Merge request was accepted and merged into the base branch. This includes commits made by GitHub's "squash and merge" merge strategy.
 
-## NeedsRebase
+## RebaseCommit
+<a name="needsrebase"></a>
 
 <%= error_label %>
 <%= version_label "0.1.0" %>
 
-The commit is detected as a fixup or squash commit. These commits communicate the intent to squash them into other commits during the next rebase. These commits should not be send in for review in Pull Requests, and they should not be merged into main branches.
+The commit is detected as a fixup, squash or amend commit. These commits communicate the intent to squash them into other commits during the next rebase using [Git's autosquash feature](https://git-scm.com/docs/git-rebase#Documentation/git-rebase.txt---autosquash).
+
+These commits should not be send in for review in Pull Requests, and they should not be merged into main branches. Please rebase the branch before pushing or merging the branch.
 
 ```md
 git checkout feature-branch
 git rebase --interactive --autosquash main
 ```
+
+- This rule was renamed from `NeedsRebase` to `RebaseCommit` in Lintje version 0.8.0.
+- This rule also checks for amend commits since Lintje version 0.8.0.
