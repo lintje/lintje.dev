@@ -8,7 +8,7 @@ Lintje is a command line tool. After [installation] Lintje can be called with th
 
 It's recommended to add Lintje to the project Continuous Integration setup to lint the range of commits added by a Pull Request or push. See also the [automated review] for more usage examples.
 
-All CLI options and flags listed on this page can also be added to a [global options file](/docs/configuration).
+All CLI options and flags listed on this page can also be added to a [global options file](/docs/configuration/).
 
 <%= toc %>
 
@@ -82,8 +82,6 @@ Read more about how [Lintje outputs hints in the terminal](/docs/output/#hints).
 
 Lintje can print the validation output with color to highlight important parts of the validation output.
 
-At this time Lintje will not print the validation result with colorized output. When this feature becomes more stable it will be turned on by default.
-
 ```sh
 # Print output with color
 lintje --color
@@ -91,6 +89,8 @@ lintje --color
 # Print output without color (default)
 lintje --no-color
 ```
+
+Since version 0.8 Lintje will print the validation result in colorized output by default.
 
 Colorized output can also be disabled with the [`NO_COLOR` environment variable](https://no-color.org/).
 
