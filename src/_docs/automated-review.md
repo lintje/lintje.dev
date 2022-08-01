@@ -51,7 +51,7 @@ if [ -x "$HOME/bin/lintje" ]; then
 else
   echo "Downloading Lintje $LINTJE_VERSION"
   curl -L \
-    "https://github.com/tombruijn/lintje/releases/download/v$LINTJE_VERSION/x86_64-unknown-linux-gnu.tar.gz" | \
+    "https://github.com/lintje/lintje/releases/download/v$LINTJE_VERSION/x86_64-unknown-linux-gnu.tar.gz" | \
     tar -xz --directory "$HOME/bin"
   cache store "$cache_key" "$HOME/bin/lintje"
 fi

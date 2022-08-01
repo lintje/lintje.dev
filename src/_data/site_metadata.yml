@@ -7,8 +7,8 @@
 title: Lintje
 description: "Lintje is a Git linter made for improving communication in teams."
 email: contact@lintje.dev
-github_repo: https://github.com/tombruijn/lintje
-releases: https://github.com/tombruijn/lintje/releases
-issue_tracker: https://github.com/tombruijn/lintje/issues
-discussions: https://github.com/tombruijn/lintje/discussions
+github_repo: https://github.com/lintje/lintje
+releases: https://github.com/lintje/lintje/releases
+issue_tracker: https://github.com/lintje/lintje/issues
+discussions: https://github.com/lintje/lintje/discussions
 latest_version: 0.7.1
