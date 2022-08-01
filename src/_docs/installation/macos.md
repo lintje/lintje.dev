@@ -10,7 +10,7 @@ description: "Install Lintje on macOS using the Homebrew tap for Lintje. Install
 To install Lintje on macOS use the [Homebrew](https://brew.sh) tap.
 
 ```
-brew tap tombruijn/lintje
+brew tap lintje/lintje
 brew install lintje
 ```
 

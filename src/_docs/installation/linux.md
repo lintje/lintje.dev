@@ -12,7 +12,7 @@ description: "Follow these installation instructions for your Linux distribution
 To install Lintje on Linux use the [Homebrew](https://brew.sh) tap.
 
 ```
-brew tap tombruijn/lintje
+brew tap lintje/lintje
 brew install lintje
 ```
 

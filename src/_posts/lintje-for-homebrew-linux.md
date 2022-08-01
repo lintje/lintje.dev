@@ -10,6 +10,6 @@ Lintje can now be installed through [Homebrew for Linux](https://brew.sh/). Plea
 To install Lintje with Homebrew on Linux, add the Lintje "tap" and install Lintje.
 
 ```
-brew tap tombruijn/lintje
+brew tap lintje/lintje
 brew install lintje
 ```
