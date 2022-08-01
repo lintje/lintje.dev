@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Lintje 0.8.0: Color by default, options file and more hints!"
-date: 2022-07-02
+date: 2022-08-01
 description: "Lintje is now available in a small Docker image for easier portability. This release also contains minor rule improvements."
 ---
 
