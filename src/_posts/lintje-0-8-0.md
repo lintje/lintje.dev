@@ -2,10 +2,10 @@
 layout: post
 title: "Lintje 0.8.0: Color by default, options file and more hints!"
 date: 2022-08-01
-description: "Lintje is now available in a small Docker image for easier portability. This release also contains minor rule improvements."
+description: "This Lintje release turns on color by default! Configure Lintje with your own options file so you no longer have to specify the CLI options every time."
 ---
 
-This Lintje 0.8.0 release turns on color by default! Configure how Lintje is called with [your own options file][options file] so you no longer have to specify the CLI options every time. There's also a new hint for adding `[skip ci]` to your commit message when only certain text files have been changed.
+This Lintje release turns on color by default! Configure how Lintje is called with [your own options file][options file] so you no longer have to specify the CLI options every time. There's also a new hint for adding `[skip ci]` to your commit message when only certain text files have been changed.
 
 Read the full list of changes below.
 
