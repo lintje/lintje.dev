@@ -5,7 +5,7 @@ description: "Set up Lintje in your Continuous Integration system to check Lintj
 
 This page contains examples of how to use Lintje in different scenarios and setups like Continuous Integration systems.
 
-## Continuous integration
+## Continuous Integration
 
 ### GitHub Action
 
