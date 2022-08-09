@@ -16,8 +16,10 @@ pre {
 p code,
 li > code {
   display: inline-block;
-  color: var(--code-inline-color);
   padding: 0 4px;
+
+  color: var(--code-inline-color);
+  word-wrap: anywhere;
   background-color: var(--code-inline-background);
   border-radius: var(--border-radius-tiny);
 }
