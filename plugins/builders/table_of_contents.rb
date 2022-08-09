@@ -6,7 +6,7 @@ class Builders::TableOfContents < SiteBuilder
   def toc_template(title: true)
     title_label =
       if title
-        "## #{title == true ? "Table of Contents" : title}\n"
+        "## #{title == true ? "Contents" : title}\n"
       else
         ""
       end

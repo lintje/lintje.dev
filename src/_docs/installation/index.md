@@ -9,7 +9,7 @@ Lintje has a release per Operating System, make sure you Operating System of cho
 
 After you've installed Lintje, make sure to add [Git hooks](/docs/git-hooks/) to your local project and/or add Lintje to the [Continuous Integration for your project](/docs/automated-review/).
 
-## Table of Contents
+## Contents
 
 - Recommended installation methods
   - [Linux Homebrew and packages](/docs/installation/linux/)
