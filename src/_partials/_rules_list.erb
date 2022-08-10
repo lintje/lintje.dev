@@ -1,0 +1,19 @@
+<% rules.each do |resource| %>
+## <%= resource.data.name %>
+
+<%=
+case resource.data.type
+when "error"
+  error_label
+when "hint"
+  hint_label
+else
+  raise "Rule type unknown `#{resource.data.type}`"
+end
+%>
+
+<%= raw ERB.new(resource.content).result(binding) %>
+<% end %>
+
+<%= render_markdown_link_references_for_links %>
+[unicode]: /docs/rules/#unicode

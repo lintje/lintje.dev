@@ -19,7 +19,7 @@ It's possible to ignore certain rules for a commit, but it's recommended to use 
 
 To ignore a rule in a specific commit, use the magic `lintje:disable` comment.
 
-Start a new line (preferably at the end of the commit message) that starts with `lintje:disable` and continue specifying the rule you want to ignore, such as: `lintje:disable SubjectPunctuation`.
+Start a new line (preferably at the end of the commit message) that starts with `lintje:disable` and continue specifying the rule you want to ignore, such as: `lintje:disable SubjectPunctuation`. The name of the rule to ignore matches with the rule name in the [rules table](/docs/rules/#rules).
 
 Example commit with multiple ignored rules:
 

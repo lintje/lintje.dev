@@ -28,6 +28,9 @@ collections:
     name: Documentation
   posts:
     permalink: "/posts/:slug/"
+  rules:
+    sort_by: order
+    name: Rules
   dev:
     output: false
     permalink: "/_dev/:path/"

@@ -34,16 +34,17 @@ module VersionLabel
   end
 
   def error_label(title = nil)
-    label(
-      %(<span aria-hidden="true">⚠️ </span>Error),
-      title || "This error needs to be resolved for Lintje to approve the commit"
-    )
+    label_for "error", title
   end
 
   def hint_label(title = nil)
+    label_for "hint", title
+  end
+
+  def label_for(type, title = nil)
     label(
-      %(<span aria-hidden="true">ℹ️ </span>Hint),
-      title || "This hint does not need to be resolved for Lintje to approve the commit"
+      rule_type_icon_with_label(type),
+      title || rule_type_description(type)
     )
   end
 end
