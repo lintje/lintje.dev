@@ -18,8 +18,7 @@ Read the rules pages for all the rules Lintje checks and how to fix them. For mo
 - [Commit type](/docs/rules/commit-type/)
 - [Branch](/docs/rules/branch/)
 
-<a name="unicode"></a>
-## A note about Unicode display width
+## A note about Unicode display width {#unicode}
 
 Not all characters render with the same display width in columns in the terminal. The `a` character has a width of one column, but an emoji usually is wider than one column. Lintje's rules will count line length in characters using their display width. This means a subject can contain 50 characters like the `a` character, but it cannot contain 50 emoji that are two columns wide. Such an emoji heavy subject is allowed a maximum of 25 emoji for the [SubjectLength rule](/docs/rules/commit-subject/#subjectlength).
 
