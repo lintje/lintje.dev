@@ -1,36 +1,4 @@
 .navigation {
-  ul {
-    display: flex;
-    margin: 0;
-    padding: 0;
-
-    list-style-type: none;
-    justify-content: center;
-    gap: 0.5rem;
-
-    font-size: 1.3rem;
-    font-weight: bold;
-  }
-
-  a {
-    display: block;
-    padding: 5px 15px;
-    color: var(--highlight-color);
-    border-radius: var(--border-radius-tiny);
-
-    &:hover {
-      position: relative;
-      top: 1px;
-    }
-
-    &:hover,
-    &.active {
-      color: var(--navigation-active-color);
-      background-color: var(--navigation-active-background);
-      text-decoration-color: var(--navigation-active-underline-color);
-    }
-  }
-
   #menu-open {
     display: none;
   }
@@ -83,7 +51,7 @@
     }
   }
 
-  #menu-open:checked ~ nav {
+  #menu-open:checked ~ .navigation-mobile {
     display: block;
   }
 
@@ -121,20 +89,6 @@
       background-color: var(--highlight-color);
     }
 
-    nav {
-      display: none;
-      position: absolute;
-      z-index: 3;
-      top: 0;
-      left: 0;
-      right: 0;
-
-      padding-top: 30px;
-      min-height: 100vh;
-
-      background-color: var(--body-background);
-    }
-
     .menu-toggle {
       display: block;
       position: absolute;
@@ -142,26 +96,138 @@
       right: 10px;
       z-index: 4;
     }
+  }
+}
 
-    ul {
-      display: block;
+.navigation-desktop,
+.navigation-mobile {
+  ul {
+    font-size: 1.3rem;
+    font-weight: bold;
+    list-style-type: none;
+  }
+
+  a,
+  h2 {
+    display: block;
+    margin-bottom: 0;
+    padding: 5px 15px;
+
+    font-size: inherit;
+  }
+
+  a {
+    color: var(--highlight-color);
+    border-radius: var(--border-radius-tiny);
+
+    &:hover {
+      position: relative;
+      top: 1px;
     }
+
+    &:hover,
+    &.active {
+      color: var(--navigation-active-color);
+      background-color: var(--navigation-active-background);
+      text-decoration-color: var(--navigation-active-underline-color);
+    }
+  }
+}
+
+.navigation-desktop {
+  > ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+
+    justify-content: center;
+    gap: 0.5rem;
+  }
+}
+
+.navigation-mobile {
+  display: none;
+  position: absolute;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  padding-top: 30px;
+  padding-bottom: 100px;
+  min-height: 100vh;
+  max-height: 100vh;
+  overflow-y: auto;
+
+  background-color: var(--body-background);
+
+  ul {
+    display: block;
+  }
+
+  > ul {
+    margin: 0;
+  }
+
+  a,
+  h2 {
+    padding: 5px 20px;
+  }
+
+  h2 {
+    margin-top: 5px;
+  }
+
+  li {
+    margin-bottom: 0;
+  }
+
+  ul ul {
+    margin-left: 20px;
+  }
+  ul ul ul {
+    margin-left: 40px;
+    font-size: 90%;
+    list-style-type: disc;
 
     li {
       margin-bottom: 5px;
       padding: 0;
     }
 
-    a {
-      display: inline-block;
-      padding: 5px 20px;
-      min-width: 75%;
-
-      &:hover,
-      &.active {
-        background-color: initial;
-      }
+    a,
+    h2 {
+      padding-top: 2px;
+      padding-bottom: 2px;
     }
+
+    a {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  }
+
+  ul ul ul ul {
+    margin-left: 30px;
+  }
+
+  bridgetown-search-form {
+    margin: var(--spacing-tiny) 0;
+    padding: 0 var(--spacing-tiny) 0 calc(var(--spacing-tiny) * 2);
+    max-width: 100%;
+
+    input {
+      width: calc(100% - 80px);
+    }
+  }
+
+  bridgetown-search-results {
+    width: calc(100% - 40px);
   }
 }
 
+@media ($mobile-breakpoint) {
+  .navigation-desktop {
+    display: none;
+  }
+}

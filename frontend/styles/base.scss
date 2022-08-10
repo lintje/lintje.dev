@@ -189,8 +189,8 @@ h4 {
 }
 
 ul {
+  margin-left: 20px;
   margin-bottom: 20px;
-  padding-left: 20px;
   list-style: disc;
 }
 
@@ -199,6 +199,7 @@ li {
 }
 
 ul ul {
+  margin-left: calc(var(--spacing-small) * 1.5);
   margin-bottom: 0;
 }
 
