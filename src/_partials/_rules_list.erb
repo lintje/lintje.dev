@@ -1,5 +1,5 @@
 <% rules.each do |resource| %>
-## <%= resource.data.name %>
+## <%= raw formatted_rule_name(resource.data.name) %>
 
 <%=
 case resource.data.type

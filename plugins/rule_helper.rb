@@ -45,6 +45,14 @@ module RuleHelper
       "[#{name}]: #{rule_path name}"
     end.join("\n")
   end
+
+  # Return rule names split up by "shy" word breaks. When a rule name doesn't
+  # fit on the screen it will break at the places of the "shy" character.
+  def formatted_rule_name(name)
+    name.gsub(/([A-Z][a-z]+)/) do |match|
+      "#{match}&shy;"
+    end.delete_suffix("&shy;")
+  end
 end
 
 Bridgetown::RubyTemplateView::Helpers.include RuleHelper
