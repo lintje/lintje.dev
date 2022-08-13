@@ -53,11 +53,11 @@ In the example above the location data is separated by colon symbols (`:`). Each
 In the example below a commit's subject contains a ticket number. The issue output highlights the ticket number in the subject with the caret symbols (`^`) on the line below. The message behind those symbols suggests a course of action to the reader. The number before the pipe symbol (`|`) matches the line number of the commit message (including the subject line) on which the problem was found.
 
 ```
-Error[SubjectTicketNumber]: The subject contains a ticket number
-  b38a8e5:1:10: Fix bug. Closes #123
+Error[SubjectPunctuation]: The subject ends with a punctuation character: `!`
+  b38a8e5:1:10: Fix bug!
     |
-  1 | Fix bug. Closes #123
-    |          ^^^^^^^^^^^ Remove the ticket number from the subject
+  1 | Fix bug!
+    |        ^ Remove punctuation from the end of the subject
 ```
 
 ## Suggestions
@@ -71,7 +71,7 @@ Error[SubjectTicketNumber]: The subject contains a ticket number
   b38a8e5:1:10: Fix bug. Closes #123
     |
   1 | Fix bug. Closes #123
-    |          ^^^^^^^^^^^ Remove the ticket number from the subject
+    |          ----------- Remove the ticket number from the subject
    ~~~
   9 | Closes #123
     | +++++++++++ Move the ticket number to the message body
@@ -80,6 +80,7 @@ Error[SubjectTicketNumber]: The subject contains a ticket number
 In the example above, line 1 and 9 may quite far apart, and there may be many lines of content between them which will cause a distraction. For this reason the content is hidden. This hidden content is indicated with the three tilde symbols (`~~~`).
 
 - ¹: The suggestion symbol was changed from the dash symbol to the plus symbol in version 0.8.0.
+- The symbol for removal suggestion was changed from the caret symbol (`^`) to the dash symbol (`-`) in version 0.10.0.
 
 ## Hints
 

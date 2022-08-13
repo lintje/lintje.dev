@@ -43,14 +43,23 @@ pre:not(:last-child) {
 }
 
 .highlight-custom {
+  .color-gray {
+    color: var(--code-gray-color);
+  }
   .color-red {
     color: var(--code-red-color);
   }
   .color-orange {
     color: var(--code-orange-color);
   }
+  .color-yellow {
+    color: var(--code-yellow-color);
+  }
   .color-blue {
     color: var(--code-blue-color);
+  }
+  .color-green {
+    color: var(--code-green-color);
   }
 }
 

@@ -15,3 +15,4 @@ Ticket references ("Fixes #123") and ["co-authored-by" lines](https://docs.githu
 - Line breaks do not count towards the required minimum message length since version 0.9.0.
 - Ticket and issue references using keywords like "Closes #123", do not count towards the required minimum message length since version 0.9.0.
 - Co-authored-by lines, do not count towards the required minimum message length since version 0.9.0.
+- All trailer lines, like Co-authored-by and Signed-off-by, are ignored and do not count towards the required minimum message length since version 0.10.0.
