@@ -11,6 +11,10 @@ Set up your alias with the following line.
 git config --global alias.lint '!lintje'
 ```
 
+<%= aside do %>
+  The second part of the `alias.lint` is the command you will run with `git`. For example: `alias.validate` becomes `git validate` as your alias.
+<% end %>
+
 You'll then be able to call it like the examples below and any other methods listed on the [usage page](/docs/usage/).
 
 ```sh

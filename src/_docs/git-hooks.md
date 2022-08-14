@@ -10,6 +10,10 @@ echo "lintje --hook-message-file=\$1" >> .git/hooks/commit-msg
 chmod +x .git/hooks/commit-msg
 ```
 
+<%= aside do %>
+  Each person in your team will need to configure Lintje locally this way. Git does not store hooks in the repository. If you want to set up a Git hook for all new repositories, please read the [about global Git hooks section](#global-git-hooks).
+<% end %>
+
 If Lintje fails the commit is not saved. The message you entered is still available in `.git/COMMIT_EDITMSG` and you can restart your commit message with:
 
 ```sh

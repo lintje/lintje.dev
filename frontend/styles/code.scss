@@ -8,7 +8,7 @@ pre {
   margin: 0;
   padding: 10px 20px;
   max-width: 100%;
-  background-color: #F1F1F1;
+  background-color: var(--code-block-background);
   overflow-x: auto;
   border-radius: var(--border-radius);
 }
@@ -22,6 +22,10 @@ li > code {
   word-wrap: anywhere;
   background-color: var(--code-inline-background);
   border-radius: var(--border-radius-tiny);
+}
+
+aside code {
+  background-color: var(--code-block-background);
 }
 
 .highlighter-rouge:not(:last-child):not(code),

@@ -25,6 +25,7 @@ $mobile-breakpoint: "max-width: 750px";
   --code-red-color: #D00000;
   --code-orange-color: #9F5100;
   --code-blue-color: #003cba;
+  --code-block-background: #F1F1F1;
   --code-inline-color: inherit;
   --code-inline-background: var(--secondary-color);
 
@@ -257,4 +258,12 @@ p:not(:last-child) {
   height: 1px;
   overflow: hidden;
   clip: rect(1px, 1px, 1px, 1px);
+}
+
+aside {
+  margin-bottom: var(--spacing-small);
+  padding: var(--spacing-tiny) var(--spacing-small);
+  font-size: 90%;
+  background-color: var(--secondary-color);
+  border-radius: var(--border-radius);
 }
