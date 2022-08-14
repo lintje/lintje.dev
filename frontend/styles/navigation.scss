@@ -116,6 +116,13 @@
     font-size: inherit;
   }
 
+  h3 {
+    margin-top: var(--spacing-tiny);
+    margin-bottom: var(--spacing-tiny);
+    padding: 0 10px;
+    font-size: 1.2rem;
+  }
+
   a {
     color: var(--highlight-color);
     border-radius: var(--border-radius-tiny);

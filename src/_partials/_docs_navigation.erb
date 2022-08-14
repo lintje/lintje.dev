@@ -33,10 +33,15 @@
     <h2>Rules</h2>
     <ul>
       <li><%= link_to_active "Rules overview", "/docs/rules/" %></li>
-      <li><%= link_to_active "Commit subject", "/docs/rules/commit-subject/" %></li>
-      <li><%= link_to_active "Commit message", "/docs/rules/commit-message/" %></li>
-      <li><%= link_to_active "Commit type", "/docs/rules/commit-type/" %></li>
-      <li><%= link_to_active "Branch", "/docs/rules/branch/" %></li>
+      <li>
+        <h3>Rules for:</h3>
+        <ul>
+          <li><%= link_to_active "Commit subject", "/docs/rules/commit-subject/" %></li>
+          <li><%= link_to_active "Commit message", "/docs/rules/commit-message/" %></li>
+          <li><%= link_to_active "Commit type", "/docs/rules/commit-type/" %></li>
+          <li><%= link_to_active "Branch", "/docs/rules/branch/" %></li>
+        </ul>
+      </li>
     </ul>
   </li>
 </ul>
