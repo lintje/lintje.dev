@@ -1,5 +1,5 @@
 ---
-title: "Commit subject rules"
+title: "Rules for subjects"
 description: "Lintje's rules for Git commit subjects. These rules are made to improve the Git commit subject: the first thing people see when they see a commit."
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: "Configuration"
+title: "Configure Lintje"
 description: "Lintje is config free by design, but can be customized per commit. Learn more about how to configure Lintje for each commit it validates."
 ---
 

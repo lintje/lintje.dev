@@ -5,7 +5,7 @@
 # in the templates via {{ site.metadata.myvariable }}.
 
 title: Lintje
-description: "Lintje is a Git linter made for improving communication in teams."
+description: "Lintje is a Git linter for improving communication in teams."
 email: contact@lintje.dev
 github_repo: https://github.com/lintje/lintje
 releases: https://github.com/lintje/lintje/releases

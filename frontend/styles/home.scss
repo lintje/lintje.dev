@@ -106,6 +106,10 @@
     --spacing-y: 40px;
   }
 
+  .home-page .hero-section {
+    padding-top: var(--spacing-small);
+  }
+
   .hero-section p {
     text-align: left;
   }

@@ -1,9 +1,9 @@
 ---
-title: "Output format"
-description: "Lintje outputs the issues it finds in a human friendly format. Learn more about this output and how you can find the source of the issue quickly."
+title: "Spot issues quickly"
+description: "Lintje print the issues it finds in an easy to understand output. Learn more about this output and how you can find the source of the issue quickly."
 ---
 
-Whenever Lintje finds an issue it will print this to the terminal in human readable output.
+Whenever Lintje finds an issue it will print this to the terminal in an easy to understand output.
 
 This output is written in such a way to help you identify what issue was found, where it was found and how to solve it. This page will help clarify anything that's unclear in this output.
 

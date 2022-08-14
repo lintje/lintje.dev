@@ -1,5 +1,5 @@
 ---
-title: "Commit message rules"
+title: "Rules for commit messages"
 description: "Lintje's rules for Git commit messages. These rules are made to improve Git commit messages and the format in which they are written."
 ---
 

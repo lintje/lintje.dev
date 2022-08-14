@@ -1,5 +1,5 @@
 ---
-title: "Installation"
+title: "How to install Lintje"
 description: "Install Lintje on your own system and make it part of your Continuous Integration workflow. Lint commits and branches."
 ---
 

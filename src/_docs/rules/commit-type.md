@@ -1,5 +1,5 @@
 ---
-title: "Commit type rules"
+title: "Rules for commit types"
 description: "Read about Lintje's rules for differen types of Git commits. These commits can be things like merge commits, or fixup and squash commits."
 ---
 

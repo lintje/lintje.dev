@@ -20,9 +20,9 @@ module RuleHelper
   def rule_type_icon_with_label(type)
     case type
     when "error"
-      %(<span aria-hidden="true">⚠️ </span> Error)
+      %(<span aria-hidden="true">⚠️ </span> Error rule)
     when "hint"
-      %(<span aria-hidden="true">ℹ️ </span> Hint)
+      %(<span aria-hidden="true">ℹ️ </span> Hint rule)
     else
       raise "Unknown issue type `#{type}`"
     end

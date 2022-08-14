@@ -20,7 +20,7 @@ Read the rules pages for all the rules Lintje checks and how to fix them. For mo
 
 There is also a [list of all available rules](#rules) available.
 
-## List of all available rules {#rules}
+## All available rules {#rules}
 
 <table>
   <thead>
