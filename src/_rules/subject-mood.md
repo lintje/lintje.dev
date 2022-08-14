@@ -42,3 +42,5 @@ Removing ...
 (_Where `...` would describe the change in more detail._)
 
 You are of course free to start the subject with any other words than are listed under the "Good" examples, as long as the subject uses the imperative grammatical mood.
+
+[imperative mood]: https://en.wikipedia.org/wiki/Imperative_mood

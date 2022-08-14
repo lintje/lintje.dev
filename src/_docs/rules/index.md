@@ -54,6 +54,4 @@ For example, by default the "Green Check Mark" emoji `✅` has a width of two, w
 
 The heart emoji `❤️`, and similar emoji, will only have a width of one column, this is by design as most other (terminal) apps–in which Lintje will print its output–will also render it with a width of one column.
 
-[unicode]: #unicode
-[imperative mood]: https://en.wikipedia.org/wiki/Imperative_mood
 [issues]: <%= site.metadata.issue_tracker %>
