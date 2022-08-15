@@ -29,7 +29,7 @@ Want to know more why Lintje's rules are the way they are? In the [philosophy se
 
 ## Automated reviews
 
-After trying out Lintje and deciding to continue using it, consider adding it to your [Continuous Integration set up](/docs/automated-review/). By adding this automated check, you can be sure everyone on the team is following the same rules and writes better commits.
+After trying out Lintje and deciding to continue using it, consider adding it to your [Continuous Integration set up](/docs/automated-review/). By adding this automated check, you can be sure everyone on the team is following the same rules and writes good commits.
 
 ## Need help or have questions?
 
