@@ -26,7 +26,7 @@ module VersionLabel
         ]
       else
         [
-          "📦 Not yet released",
+          %(<span aria-hidden="true">📦</span> Not yet released),
           "This feature is not yet release"
         ]
       end
