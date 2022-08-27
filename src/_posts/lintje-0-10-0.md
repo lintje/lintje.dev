@@ -29,6 +29,12 @@ Several rules have gotten improvements for the [help output](/docs/output/) they
 
 Suggestions with additions are now colored green, with removals colored yellow. Errors highlights are still colored orange. Additions will also always use the plus symbol (+) instead of the caret (^).
 
+## Known issues
+
+At this time the following issues are known:
+
+- Lintje's `lintje:disable RuleName` lines are ignored at the end of the message body. It's not possible to disable rules in Lintje's validation in this version. This will be fixed in the next version.
+
 ## Changelog
 
 Read all the changes in the changelog below.

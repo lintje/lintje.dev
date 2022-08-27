@@ -35,6 +35,10 @@ lintje:disable MessageLineTooLong
 
 _(The above is a bad commit, please don't use the disabling of rules this way.)_
 
+<%= aside do %>
+    <span aria-hidden="true">⚠️</span> Ignoring rules with the `lintje:disable` line does not work in Lintje version 0.10.0. Upgrade to a newer, or older, version if you use this feature.
+<% end %>
+
 ## Options file
 
 <%= version_label "0.8.0" %>
