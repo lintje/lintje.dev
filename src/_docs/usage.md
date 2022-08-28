@@ -103,6 +103,22 @@ export NO_COLOR=true
 lintje
 ```
 
+## Install Git hooks
+
+Use the `--install-hook` CLI option to install Git hooks more easily. Check out the [Git hooks docs page](/docs/git-hooks/) for more information.
+
+## Verbose output
+
+<%= version_label "0.11.0" %>
+
+Lintje has a verbose mode that prints the commits and branches that were read. It includes a breakdown of the different parts of a commit and branch to provide more context. It can also help debug issues in Lintje.
+
+Verbose output is turned off by default. The output printed by verbose mode is _not_ covered by the [output docs](/docs/output/).
+
+```sh
+lintje --verbose
+```
+
 ## Exit codes
 
 Lintje will exit with the following status codes in these situations:

@@ -15,15 +15,25 @@ Git hooks allow you to run commands before saving a commit, after saving a commi
 
 ### Validate before saving a commit
 
-To add a Git hook, run the following commands in each project you want to use Lintje.
+Use the installer below to add a Git hook that validates the commit right before it's saved. Run this command in each project you want to use Lintje.
 
 ```sh
-# Linux/macOS example
-echo "lintje --hook-message-file=\$1" >> .git/hooks/commit-msg
-chmod +x .git/hooks/commit-msg
+lintje --install-hook commit-msg
 ```
 
-If Lintje finds an issue the commit is not saved. The message you entered is still available in the `.git/COMMIT_EDITMSG` file. Using this file you can continue writing your commit message with the following command:
+<%= aside do %>
+  #### Lintje 0.10 and older
+
+  If you use Lintje version 0.10 or older, add the hook manually. The `lintje --install-hook` option was added in Lintje version 0.11.
+
+  ```sh
+  # Linux/macOS example
+  echo "lintje --hook-message-file=\$1" >> .git/hooks/commit-msg
+  chmod +x .git/hooks/commit-msg
+  ```
+<% end %>
+
+If Lintje finds one or more issues, the commit is not saved. The message you entered is still available in the `.git/COMMIT_EDITMSG` file. Using this file you can continue writing your commit message with the following command:
 
 ```sh
 git commit --edit --file=.git/COMMIT_EDITMSG
@@ -37,10 +47,22 @@ Personally, I don't like how the Git `commit-msg` hook fails the commit process 
 
 Instead, I prefer using the `post-commit` hook. If any issues are reported by Lintje, you can amend the commit message afterwards. Along with [automated review in Continuous Integration](/docs/automated-review/) you can make sure no invalid commits get merged.
 
+Use the installer below to add a Git hook that validates the commit right after it's saved. Run this command in each project you want to use Lintje.
+
 ```sh
-echo "lintje" >> .git/hooks/post-commit
-chmod +x .git/hooks/post-commit
+lintje --install-hook post-commit
 ```
+
+<%= aside do %>
+  #### Lintje 0.10 and older
+
+  If you use Lintje version 0.10 or older, add the hook manually. The `lintje --install-hook` option was added in Lintje version 0.11.
+
+  ```sh
+  echo "lintje" >> .git/hooks/post-commit
+  chmod +x .git/hooks/post-commit
+  ```
+<% end %>
 
 When Lintje finds any issues, you can then amend the commit to fix the reported issues.
 
