@@ -1,0 +1,18 @@
+---
+sitemap: false
+permalink: /unknown-rule/
+layout: page
+title: "Rule not found"
+---
+
+<p>The requested rule could not be found. Please choose a rule from the list below.</p>
+
+<h2>Available rules</h2>
+
+<%= render "rules_table" %>
+
+<div class="text-center cta"><a href="/" class="button button-secondary">Go back to the homepage</a></div>
+
+<% if Bridgetown.env.production? %>
+<script><%= raw plausible_404_script %></script>
+<% end %>

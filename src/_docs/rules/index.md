@@ -22,27 +22,7 @@ There is also a [list of all available rules](#rules) available.
 
 ## All available rules {#rules}
 
-<table>
-  <thead>
-    <tr>
-      <th class="td-width-50p">Rule name</th>
-      <th>Rule type</th>
-    </tr>
-  </thead>
-  <tbody>
-<% rule_resources.each do |resource| %>
-<% name = resource.data.name %>
-    <tr>
-      <td><%= link_to name, rule_path(name) %></td>
-      <td>
-        <span title="<%= rule_type_description(resource.data.fetch(:type)) %>">
-          <%= raw rule_type_icon_with_label resource.data.fetch(:type) %>
-        </span>
-      </td>
-    </tr>
-<% end %>
-  </tbody>
-</table>
+<%= render "rules_table" %>
 
 ## A note about Unicode display width {#unicode}
 
