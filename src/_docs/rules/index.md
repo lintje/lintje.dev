@@ -32,6 +32,6 @@ Not all emoji render with the same width and may break the layout of Lintje's ou
 
 For example, by default the "Green Check Mark" emoji `✅` has a width of two, while the "Woman Scientist" emoji `👩‍🔬` has a width of four columns. This is because the second emoji is a combination of the `👩` and `🔬` emoji. Normally they would both be counted towards the width even though only one emoji is rendered. This particular scenario is calculated and rendered properly as two columns in Lintje.
 
-The heart emoji `❤️`, and similar emoji, will only have a width of one column, this is by design as most other (terminal) apps–in which Lintje will print its output–will also render it with a width of one column.
+The heart emoji `❤️`, and similar emoji, will only count as a width of one column. This is by design. Most other (terminal) apps–in which Lintje will print its output–will also render it with a width of one column.
 
 [issues]: <%= site.metadata.issue_tracker %>
