@@ -19,6 +19,7 @@
 .media-icon-180 span,
 .media-icon-16 span,
 .media-icon-32 span {
+  position: relative;
   color: #FFF;
   font-family: serif;
   font-style: italic;
@@ -27,16 +28,33 @@
 .media-icon-500 {
   --media-icon-size: 500px;
   font-size: 410px;
+
+  span {
+    top: 30px;
+  }
 }
 .media-icon-180 {
   --media-icon-size: 180px;
   font-size: 160px;
-}
-.media-icon-16 {
-  --media-icon-size: 16px;
-  font-size: 16px;
+
+  span {
+    top: 15px;
+  }
 }
 .media-icon-32 {
   --media-icon-size: 32px;
   font-size: 28px;
+
+  span {
+    top: 3px;
+  }
+}
+
+.media-icon-16 {
+  --media-icon-size: 16px;
+  font-size: 16px;
+
+  span {
+    top: 2px;
+  }
 }
