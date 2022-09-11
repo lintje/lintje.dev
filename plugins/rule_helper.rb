@@ -20,9 +20,9 @@ module RuleHelper
   def rule_type_icon_with_label(type)
     case type
     when "error"
-      %(<span aria-hidden="true">⚠️ </span> Error rule)
+      %(#{icon "exclamation-triangle-solid", :class => "icon-orange"} Error rule)
     when "hint"
-      %(<span aria-hidden="true">ℹ️ </span> Hint rule)
+      %(#{icon "info-square-solid", :class => "icon-blue"} Hint rule)
     else
       raise "Unknown issue type `#{type}`"
     end

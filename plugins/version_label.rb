@@ -21,13 +21,13 @@ module VersionLabel
     message, title =
       if latest_verison_object >= release_version_object
         [
-          "Version #{version}",
+          %(#{icon "cube-solid", :class => "icon-purple"} Version #{version}),
           "This feature was added in Lintje version #{version}."
         ]
       else
         [
-          %(<span aria-hidden="true">📦</span> Not yet released),
-          "This feature is not yet release"
+          %(#{icon "cube-solid", :class => "icon-ornage"} Not yet released),
+          "This feature is not yet released"
         ]
       end
     label(message, title)

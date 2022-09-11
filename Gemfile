@@ -30,4 +30,7 @@ gem "puma", "~> 5.6"
 
 gem "pry"
 
-gem "bridgetown-quick-search", "~> 1.1", :group => :bridgetown_plugins
+group :bridgetown_plugins do
+  gem "bridgetown-quick-search", "~> 1.1"
+  gem "bridgetown-svg-inliner", "~> 1.0"
+end
