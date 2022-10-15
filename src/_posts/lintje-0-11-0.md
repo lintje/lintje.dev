@@ -72,7 +72,7 @@ Read all the changes in the changelog below.
 
 ---
 
-- <%= release_link "0.10.0" %>
+- <%= release_link "0.11.0" %>
 - View the <%= link_to "installation guide", "/docs/installation/" %> for installation methods and ways to upgrade.
 
 [install hook]: /docs/git-hooks/

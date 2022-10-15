@@ -20,7 +20,7 @@ Read all the changes in the changelog below.
 
 ---
 
-- <%= release_link "0.10.0" %>
+- <%= release_link "0.11.1" %>
 - View the <%= link_to "installation guide", "/docs/installation/" %> for installation methods and ways to upgrade.
 
 [MessageTicketNumber]: /docs/rules/commit-message/#messageticketnumber
