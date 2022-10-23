@@ -39,6 +39,26 @@ _(The above is a bad commit, please don't use the disabling of rules this way.)_
     <span aria-hidden="true">⚠️</span> Ignoring rules with the `lintje:disable` line does not work in Lintje version 0.10.0. Upgrade to a newer, or older, version if you use this feature.
 <% end %>
 
+### Automatically ignored commits
+
+Lintje understands you don't write all the commits in a project. Commits made by bots and certain merge commits. These kinds of commits are ignored by default, so you don't have to worry about these commits failing the Lintje validation.
+
+List of ignored commits:
+
+- Merge commits:
+    - Commit subjects starting with:
+        - `Merge tag`,
+        - `Merge pull request`,
+        - `Merge branch`,
+            - And containing a reference to a GitLab Merge Request in the message body `See merge request org/repo!123`.
+            - And not containing a reference to a remote branch like `Merge branch 'develop' of repo/location into develop`.
+        - `Merge SHA into SHA`.
+    - Squash merge commits where the commit subject ends with a Pull Request number: `(#123)`.
+- Revert commits:
+    - Commit subjects matching this format: `Revert "Other commit's subject"`
+- Commits made by GitHub bots:
+    - The commit author's email address ends with: `[bot]@users.noreply.github.com`
+
 ## Options file
 
 <%= version_label "0.8.0" %>
