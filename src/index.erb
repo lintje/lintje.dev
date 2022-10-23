@@ -9,8 +9,7 @@ description: "A Git linter made to improve communication in teams. Make sure com
   <div class="container">
     <h1>Write good commits for your team</h1>
 
-    <p>Lintje is an opinionated linter for Git, promoting communication in teams.</p>
-    <p>Write commits for Pull Request reviewers. Prepare necessary context for team members in debug sessions many months from now.</p>
+    <p>Lintje is an opinionated linter for Git, promoting team communication in Git.</p>
 
     <div class="cta">
       <a class="button" href="/docs/introduction/">
@@ -26,22 +25,32 @@ description: "A Git linter made to improve communication in teams. Make sure com
   </div>
 </section>
 
-<section class="home-section dark-section">
+<section class="home-section dark-section usp-section">
   <div class="container">
     <h2>Write a story</h2>
-
-    <p>Good commits tell a story. They add context to your Git commits and branches. A commit should explain the problem it solves, the chosen solution and what alternatives were considered.</p>
-
-    <p>Lintje checks a variety of rules, from style to content. Some of these rules are:</p>
-
+    <p>Good commits tell a story. They add necessary context to your file changes. For reviews and debugging sessions months from now.</p>
     <ul>
-      <li>The subject describes the change. No "WIP", "Closes #123", "Fix" or "Fixed bug", but "Fix bug in email validation for new subscribers".</li>
-      <li>There is a message body present. Explain why the change was necessary. Describe the chosen solution. Explain why the alternatives you considered didn't work as well.</li>
-      <li>The message body contains a reference to a tracking issue.</li>
-      <li>The commit contains file changes. No need to make a commit if it contains nothing.</li>
-      <li>Fixup and squash commits are rebased before merging.</li>
-      <li>Avoid merge commits from remote branches. Rebase the branch instead.</li>
-      <li>Branch names describe the topic of the changes. No "fix-bug", "fix-123", but "fix-subscriber-email-validation" or "fix-123-subscriber-email-validation".</li>
+      <li>
+        <div class="hexagon"><span class="hexagon-text">1</span></div>
+        <div class="list-description">
+        <div class=list-heading>Explain why the commit is needed</div>
+        <div class=list-text>Explain what error occurred or what issue a user reported. If the commit adds a new feature, explain why it was added. Refactoring a part of the code base? Describe how to old code wasn't working.</div>
+        </div>
+      </li>
+      <li>
+        <div class="hexagon"><span class="hexagon-text">2</span></div>
+        <div class="list-description">
+          <div class=list-heading>Describe what was changed</div>
+          <div class=list-text>In the commit message, explain why this implementation was chosen and what changes are especially important. List any alternatives that were considered and why they were not chosen. Write down the constraints that were present, like lack of time.</div>
+        </div>
+      </li>
+      <li>
+        <div class="hexagon"><span class="hexagon-text">3</span></div>
+        <div class="list-description">
+          <div class=list-heading>Link your sources</div>
+          <div class=list-text>Include links to documentation, issues, blog posts, other parts of the code or other projects you consulted to make this change. Provide as much context as possible.</div>
+        </div>
+      </li>
     </ul>
 
     <div class="text-center cta">
@@ -49,6 +58,43 @@ description: "A Git linter made to improve communication in teams. Make sure com
     </div>
   </div>
 </section>
+
+<section class="home-section">
+  <div class="container">
+    <h2>Spot undescriptive commits</h2>
+    <div class="two-columns">
+      <div class="column-65">
+        <p>A well written commit <strong>saves you hours</strong> of debugging. Good commits help you get unstuck without waiting for team members to respond to your call for help.</p>
+
+        <p>Lintje helps you <strong>spot</strong> undescriptive commits and <strong>suggests</strong> steps to improve them.</p>
+
+        <p><em>Don't forget: good commits contain a message with more detail!</em></p>
+      </div>
+      <!-- <div class="column-35 commits-box"> -->
+      <!--   <ul> -->
+      <!--     <li>"WTF?"</li> -->
+      <!--     <li>"What does this do?"</li> -->
+      <!--     <li>"Why is this here?"</li> -->
+      <!--     <li>"Why is this like this?"</li> -->
+      <!--     <li>"This could never have worked"</li> -->
+      <!--     <li>"This is no longer necessary"</li> -->
+      <!--   </ul> -->
+      <!-- </div> -->
+      <div class="column-35 commits-box">
+        <ul>
+          <li>WIP</li>
+          <li>fix bug</li>
+          <li>closes #123</li>
+          <li>End of day backup</li>
+          <li>add test</li>
+          <li>[JIRA-123]</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr>
 
 <section class="home-section">
   <div class="container">
@@ -63,6 +109,8 @@ description: "A Git linter made to improve communication in teams. Make sure com
     </div>
   </div>
 </section>
+
+<hr>
 
 <section class="home-section getting-started-section">
   <div class="container">

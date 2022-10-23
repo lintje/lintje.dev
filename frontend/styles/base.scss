@@ -210,7 +210,7 @@ ul {
   list-style: disc;
 }
 
-li {
+li:not(:last-child) {
   margin-bottom: 5px;
 }
 
@@ -224,9 +224,13 @@ ul ul li {
 }
 
 hr {
-  margin: 3rem 0;
+  margin: var(--spacing-normal) 0;
   border: none;
-  border-top: 2px solid #bbb;
+  border-top: 2px solid #cccccc;
+
+  @media ($mobile-breakpoint) {
+    margin: var(--spacing-small) 0;
+  }
 }
 
 strong {
@@ -269,4 +273,21 @@ aside {
   font-size: 90%;
   background-color: var(--secondary-color);
   border-radius: var(--border-radius);
+}
+
+.two-columns {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  .column-35 {
+    flex-basis: 35%;
+  }
+  .column-65 {
+    flex-basis: 65%;
+  }
+
+  @media ($mobile-breakpoint) {
+    display: block;
+  }
 }
