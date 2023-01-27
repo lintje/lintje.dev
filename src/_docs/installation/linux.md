@@ -41,6 +41,7 @@ detect your distribution and version, and the Lintje package to install.
 
 ```sh
 curl -1sLf "https://dl.cloudsmith.io/public/lintje/lintje/setup.deb.sh" | sudo -E bash
+sudo apt-get install lintje
 ```
 
 If you're like me and don't like to run remote installation scripts by piping
