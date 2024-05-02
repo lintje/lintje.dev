@@ -24,7 +24,7 @@ jobs:
     name: "Lintje (Git linter)"
     runs-on: ubuntu-latest # Supported on ubuntu, macOS and Microsoft Windows
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
         with:
           fetch-depth: 0 # Fetch depth is required
       - uses: lintje/action@v<%= latest_minor_version %>
