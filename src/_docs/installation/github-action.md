@@ -23,6 +23,7 @@ jobs:
   lintje: # Add a new job for Lintje
     name: "Lintje (Git linter)"
     runs-on: ubuntu-latest # Supported on ubuntu, macOS and Microsoft Windows
+    if: ${{ github.event_name != 'schedule' }}
     steps:
       - uses: actions/checkout@v4
         with:
